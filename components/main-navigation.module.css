@@ -1,0 +1,17 @@
+.nav {
+  display: flex;
+  justify-content: space-around;
+  height: 10vh;
+  background-color: aqua;
+  align-items: center;
+}
+
+.nav__links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav__socials {
+  display: flex;
+  gap: 2rem;
+}

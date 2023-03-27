@@ -59,7 +59,7 @@ p {
 
 li {
   letter-spacing: 1px;
-  font-size: 28px;
+  font-size: 18px;
   cursor: pointer;
 }
 
@@ -69,7 +69,7 @@ a {
 }
 
 li:hover {
-  border-bottom: 2px solid greenyellow;
+  border-top: 2px solid greenyellow;
 }
 
 label {

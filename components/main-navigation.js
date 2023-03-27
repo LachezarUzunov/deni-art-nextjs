@@ -4,20 +4,30 @@ import Link from "next/link";
 
 const MainNavigation = () => {
   return (
-    <ul>
-      <li>
-        <Link href="/">НАЧАЛО</Link>
-      </li>
-      <li>
-        <Link href="/za-men">ЗА МЕН</Link>
-      </li>
-      <li>
-        <Link href="/galeria">ГАЛЕРИЯ</Link>
-      </li>
-      <li>
-        <Link href="/kontakti">КОНТАКТИ</Link>
-      </li>
-    </ul>
+    <nav className={classes.nav}>
+      <ul className={classes.nav__links}>
+        <li>
+          <Link href="/">НАЧАЛО</Link>
+        </li>
+        <li>
+          <Link href="/za-men">ЗА МЕН</Link>
+        </li>
+        <li>
+          <Link href="/galeria">ГАЛЕРИЯ</Link>
+        </li>
+        <li>
+          <Link href="/kontakti">КОНТАКТИ</Link>
+        </li>
+      </ul>
+      <ul className={classes.nav__socials}>
+        <li>
+          <a href="/">FS</a>
+        </li>
+        <li>
+          <a href="/">INSTA</a>
+        </li>
+      </ul>
+    </nav>
   );
 };
 
