@@ -1,0 +1,10 @@
+.hero {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+}
+
+.hero__info {
+  color: white;
+  padding-top: 8rem;
+}
