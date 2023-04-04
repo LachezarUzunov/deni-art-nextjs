@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-around;
   background-color: black;
+  min-height: 90vh;
 }
 
 .hero__info {

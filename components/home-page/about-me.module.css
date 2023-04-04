@@ -1,0 +1,31 @@
+.background {
+  background-image: url("../../public/site/smoke.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.info {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-around;
+  gap: 10%;
+}
+
+.title {
+  padding-top: 8rem;
+  color: var(--violet);
+}
+
+.btn {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  transition: 300ms ease-in-out;
+}
+
+.btn:hover {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}

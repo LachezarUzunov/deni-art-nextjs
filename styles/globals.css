@@ -1,7 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Gabriela&family=Kurale&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Rubik+Wet+Paint&family=Sofia+Sans+Condensed:ital,wght@0,1;0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,1;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Vollkorn+SC:wght@400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Comfortaa:wght@300;400;500;600;700&family=Gabriela&family=Kurale&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Rubik+Wet+Paint&family=Sofia+Sans+Condensed:ital,wght@0,1;0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,1;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Vollkorn+SC:wght@400;600;700;900&display=swap");
 
 /* 
     font-family: 'Caveat', cursive;
+    font-family: 'Comfortaa', cursive;
     font-family: 'Gabriela', serif;
     font-family: 'Kurale', serif;
     font-family: 'Montserrat', sans-serif;
@@ -15,9 +16,12 @@
   --lg-screen: 70%;
   --med-screen: 80%;
   --sm-screen: 90%;
+
+  --violet: #fa36fa;
 }
 html {
   scroll-behavior: smooth;
+  font-size: 62.5%;
 }
 
 *,
@@ -42,19 +46,37 @@ main {
 }
 
 h1 {
-  font-family: "Kurale", serif;
+  font-family: "Vollkorn SC", serif;
+  letter-spacing: 0.4rem;
+  font-size: 6rem;
 }
 
 h2 {
 }
 
 h3 {
+  font-family: "Caveat", cursive;
+  /* font-family: "Gabriela", serif; */
+  font-family: "Philosopher", sans-serif;
+  font-style: italic;
+  color: white;
+  font-size: 4rem;
 }
 
 h4 {
+  font-family: "Caveat", cursive;
+  color: white;
+  font-size: 4rem;
 }
 
 p {
+  padding-bottom: 1rem;
+  font-family: "Sofia Sans Condensed", sans-serif;
+  letter-spacing: 0.2rem;
+  line-height: 1.6;
+  color: white;
+  font-size: 2rem;
+  font-family: "Comfortaa", cursive;
 }
 
 li {
@@ -98,7 +120,7 @@ input:focus {
   caret-color: black;
 }
 
-.main {
+.container {
   margin: 0 auto;
   width: var(--lg-screen);
 }
@@ -110,27 +132,31 @@ input:focus {
 
 .btn__primary {
   display: block;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 1.6rem;
+  width: max-content;
+  font-family: "Vollkorn SC", serif;
+  letter-spacing: 0.1rem;
+  text-align: left;
+  font-weight: 500;
+  font-size: 2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
   text-transform: uppercase;
-  padding: 0.8rem;
-  width: 100%;
-  background-color: yellow;
-  border: none;
-  border-radius: 10px;
+  padding-bottom: 0.6rem;
+  border-bottom: 2px solid yellow;
+  border-bottom-width: 60%;
+  color: yellow;
   font-weight: 700;
   transition: 0.2s ease-in-out;
 }
 
 .btn__primary:hover {
-  background-color: rgb(201, 201, 0);
   cursor: pointer;
+  border-bottom: 4px solid yellow;
 }
 
 .btn__primary:focus {
   background-color: rgb(146, 146, 3);
+  border-bottom: 4px solid yellow;
 }
 
 .genInput {
@@ -159,7 +185,7 @@ input:focus {
   color: yellow;
   font-family: "Josefin Sans", sans-serif;
 }
-
+/* 
 @media screen and (max-width: 960px) {
   h1 {
     font-size: 2.6rem;
@@ -287,4 +313,4 @@ input:focus {
     height: 2.5rem;
     font-size: 0.8rem;
   }
-}
+} */

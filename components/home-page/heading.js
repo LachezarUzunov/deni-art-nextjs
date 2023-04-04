@@ -6,7 +6,7 @@ const Heading = () => {
   return (
     <section className={classes.hero}>
       <article className={classes.hero__info}>
-        <h1>Деница Кръстанова</h1>
+        <h1 className={classes.hero__heading}>Деница Кръстанова</h1>
         <h3>Творец и изследовател на човешката душа</h3>
       </article>
 
