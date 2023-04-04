@@ -52,6 +52,12 @@ h1 {
 }
 
 h2 {
+  font-family: "Vollkorn SC", serif;
+  letter-spacing: 0.2rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: yellow;
+  text-align: center;
 }
 
 h3 {

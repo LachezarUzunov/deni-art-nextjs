@@ -1,3 +1,5 @@
+import { BsFacebook } from "react-icons/bs";
+import { BsInstagram } from "react-icons/bs";
 import classes from "./main-navigation.module.css";
 
 import Link from "next/link";
@@ -21,10 +23,14 @@ const MainNavigation = () => {
       </ul>
       <ul className={classes.nav__socials}>
         <li>
-          <a href="/">FS</a>
+          <a href="/">
+            <BsFacebook />
+          </a>
         </li>
         <li>
-          <a href="/">INSTA</a>
+          <a href="/">
+            <BsInstagram />
+          </a>
         </li>
       </ul>
     </nav>

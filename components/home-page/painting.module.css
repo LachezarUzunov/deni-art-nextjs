@@ -1,0 +1,12 @@
+.btn {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  transition: 300ms ease-in-out;
+}
+
+.btn:hover {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
