@@ -1,0 +1,22 @@
+.bg {
+  background-color: black;
+  min-height: 30vh;
+  border-top: 0.1rem solid rgba(255, 255, 0, 0.5);
+}
+
+.nav {
+  margin-top: 8rem;
+  display: flex;
+  justify-content: space-around;
+  gap: 10rem;
+}
+
+.lis {
+  color: white;
+  border-bottom: solid 1px yellow;
+}
+
+.nav__links {
+  display: flex;
+  gap: 4rem;
+}
