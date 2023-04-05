@@ -1,0 +1,19 @@
+.bg {
+  background-image: url("../../public//site/smoke.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.contacts {
+  padding: 8rem 0;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid rgba(255, 255, 0, 0.6);
+}
+
+.icon {
+  color: white;
+  font-size: 6rem;
+  margin-bottom: 2rem;
+}
