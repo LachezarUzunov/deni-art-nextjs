@@ -4,12 +4,14 @@ import Image from "next/image";
 import Link from "next/link";
 import classes from "./painting.module.css";
 
-const Painting = () => {
+const Painting = ({ src, alt, technique, width, height, dimensions }) => {
   return (
-    <section className={classes.background}>
-      <Image />
-      <article>
-        <h3>Размери в сантиметри</h3>
+    <section className={classes.painting__section}>
+      <Image src={src} alt={alt} width={width} height={height} />
+      <article className={classes.painting__info}>
+        <h3>Заглавие - {alt}</h3>
+        <p>Размери в сантиметри - {dimensions}</p>
+        <p>Техника на рисуване - {technique}</p>
         <p>
           Мога да рисувам само това, което виждам. Моята работа винаги е добра,
           когато аз съм сам, и следвам своите собствени впечатления.

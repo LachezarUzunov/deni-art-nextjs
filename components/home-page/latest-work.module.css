@@ -5,4 +5,19 @@
     rgba(95, 50, 130, 1) 30%,
     rgba(46, 20, 65, 1) 85%
   );
+  padding: 8rem 0;
+}
+
+.painting__header {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.painting {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }

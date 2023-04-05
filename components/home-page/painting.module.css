@@ -1,3 +1,14 @@
+.painting__section {
+  width: 30%;
+}
+
+.painting {
+  text-align: center;
+}
+
+.painting__info {
+}
+
 .btn {
   display: flex;
   gap: 2rem;
