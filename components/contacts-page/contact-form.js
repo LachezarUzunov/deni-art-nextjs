@@ -8,11 +8,15 @@ const ContactForm = () => {
         <p>Ще отговоря на запитването във възможно най-кратък срок</p>
       </div>
       <form className={classes.form}>
-        <input placeholder="Име" required />
-        <input placeholder="Имейл адрес" required />
-        <input placeholder="Искам да поръчам картина" />
-        <textarea></textarea>
-        <button>Изпрати съобщение</button>
+        <label htmlFor="name">Име</label>
+        <input placeholder="Име" id="name" required />
+        <label htmlFor="email">Име</label>
+        <input placeholder="Имейл адрес" id="email" required />
+        <label htmlFor="about">Име</label>
+        <input placeholder="Искам да поръчам картина" id="about" />
+        <label htmlFor="question">Вашето запитване</label>
+        <textarea required id="question"></textarea>
+        <button className="btn__primary">Изпрати съобщение</button>
       </form>
     </section>
   );
