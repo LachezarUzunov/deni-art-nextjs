@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-around;
   height: 10vh;
-  background-color: aqua;
+  background-color: var(--deep-purple);
   align-items: center;
 }
 
@@ -14,4 +14,8 @@
 .nav__socials {
   display: flex;
   gap: 2rem;
+}
+
+.link {
+  color: var(--gray);
 }

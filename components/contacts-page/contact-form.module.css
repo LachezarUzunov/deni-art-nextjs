@@ -1,5 +1,31 @@
+.form__section {
+  padding-top: 6rem;
+}
+
 .form {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  width: 50%;
+  margin-top: 4rem;
+}
+
+.form_center {
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  color: var(--dark-gray);
+  font-size: 1.4rem;
+}
+
+.header_two {
+  margin-top: 2rem;
+  color: var(--gray);
+}
+
+.centered_btn {
+  display: flex;
+  justify-content: center;
 }
