@@ -1,8 +1,11 @@
 .hero {
-  display: flex;
-  justify-content: space-around;
   background-color: black;
   min-height: 90vh;
+}
+
+.hero_section {
+  display: flex;
+  justify-content: space-around;
 }
 
 .hero__info {

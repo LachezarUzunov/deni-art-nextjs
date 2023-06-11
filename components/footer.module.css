@@ -1,7 +1,7 @@
 .bg {
   background-color: black;
-  min-height: 30vh;
-  border-top: 0.1rem solid rgba(255, 255, 0, 0.5);
+  min-height: 26vh;
+  border-top: 0.1rem solid var(--violet);
 }
 
 .nav {
@@ -12,8 +12,13 @@
 }
 
 .lis {
-  color: white;
-  border-bottom: solid 1px yellow;
+  color: var(--dark-gray);
+  border-bottom: solid 1px var(--violet);
+  transition: ease-in-out 0.5s;
+}
+
+.lis:hover {
+  color: var(--gray);
 }
 
 .nav__links {

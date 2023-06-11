@@ -9,16 +9,19 @@ const MainNavigation = () => {
     <nav className={classes.nav}>
       <ul className={classes.nav__links}>
         <li>
-          <Link className={classes.link} href="/">НАЧАЛО</Link>
+          <Link className={classes.link} href="/">Начало</Link>
         </li>
         <li>
-          <Link className={classes.link} href="/za-men">ЗА МЕН</Link>
+          <Link className={classes.link} href="/za-men">За мен</Link>
         </li>
         <li>
-          <Link className={classes.link} href="/galeria">ГАЛЕРИЯ</Link>
+          <Link className={classes.link} href="/kartini">Картини</Link>
         </li>
         <li>
-          <Link className={classes.link} href="/kontakti">КОНТАКТИ</Link>
+          <Link className={classes.link} href="/risunki">Рисунки</Link>
+        </li>
+        <li>
+          <Link className={classes.link} href="/kontakti">Контакти</Link>
         </li>
       </ul>
       <ul className={classes.nav__socials}>

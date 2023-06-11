@@ -3,28 +3,34 @@
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
-  padding-bottom: 8rem;
+  padding-bottom: 6rem;
 }
 
 .contacts {
-  padding: 8rem 0;
+  padding: 6rem 0;
   display: flex;
   justify-content: space-around;
-  border-bottom: 1px solid rgba(255, 255, 0, 0.6);
 }
 
 .contacts__single {
   display: flex;
-  gap: 4rem;
+  gap: 2rem;
 }
 
 .icon {
-  color: var(--gray);
+  color: var(--dark-gray);
   font-size: 2rem;
-  margin-bottom: 2rem;
+}
+
+.icon:hover {
+  color: var(--violet);
 }
 
 .contact_details {
   font-size: 2rem;
   letter-spacing: 2px;
+}
+
+.contact_details:hover {
+  color: var(--violet);
 }
