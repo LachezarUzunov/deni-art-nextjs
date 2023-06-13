@@ -18,3 +18,8 @@
   padding-bottom: 0.6rem;
   border-bottom: 1px solid var(--violet);
 }
+
+@media screen and (max-width: 450px) {
+
+  
+}
