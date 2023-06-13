@@ -19,7 +19,8 @@
   --violet: rgb(250, 54, 250);
   --deep-purple: rgb(59, 4, 59);
   --violet-ts: rgba(250, 54, 250, 0.7);
-  --deep-purple-ts: rgba(59, 4, 59, 0.7);
+  --deep-purple-ts: rgba(31, 2, 31, 0.8);
+  --deep-blueish-ts: #2e1441bc;
   --gray: #E6DDD6;
   --dark-gray: #918A84;
 
@@ -170,12 +171,12 @@ textarea:focus {
   background-color: var(--violet);
   color: var(--gray);
   text-transform: uppercase;
-  transition: 0.2s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 .btn__primary:hover {
   cursor: pointer;
- 
+  background-color: var(--deep-purple);
 }
 
 .btn__primary:focus {

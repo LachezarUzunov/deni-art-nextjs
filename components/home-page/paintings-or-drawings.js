@@ -33,8 +33,8 @@ const PaintingsOrDrawings = () => {
         onMouseLeave={mouseLeftLeaveHandler}
         className={`${classes.left} ${classes.split}`}
       >
-        <h1 className={classes.title}>КАРТИНИ</h1>
-        <Link className={classes.btn} href="/картини">
+        <h1 className={classes.title}>Картини</h1>
+        <Link className={classes.btn} href="/kartini">
           Разгледай
         </Link>
       </article>
@@ -43,8 +43,8 @@ const PaintingsOrDrawings = () => {
         onMouseLeave={mouseRightLeaveHandler}
         className={`${classes.right} ${classes.split}`}
       >
-        <h1 className={classes.title}>РИСУНКИ</h1>
-        <Link className={classes.btn} href="/рисунки">
+        <h1 className={classes.title}>Рисунки</h1>
+        <Link className={classes.btn} href="/risunki">
           Разгледай
         </Link>
       </article>

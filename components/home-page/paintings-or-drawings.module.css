@@ -38,7 +38,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: var(--violet-ts);
+  background-color: var(--deep-blueish-ts);
 }
 
 .title {
@@ -65,13 +65,15 @@
   text-decoration: none;
   color: white;
   border: white solid 0.4rem;
+  border-radius: 15px;
   font-size: 2rem;
   width: 20rem;
   padding: 2rem;
+  transition: ease-in-out .4s;
 }
 
 .split.left .btn:hover {
-  background-color: var(--deep-purple);
+  background-color: var(--violet);
 }
 
 .split.right .btn:hover {

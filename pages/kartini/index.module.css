@@ -1,0 +1,10 @@
+.background {
+    background-image: url("../../public/site/pink-dust-particles-splash-against-black-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  }
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+}
