@@ -6,9 +6,6 @@
   text-align: center;
 }
 
-.painting__info {
-}
-
 .image_title {
   font-size: 3.2rem;
   margin-top: 1.6rem;
@@ -31,3 +28,28 @@
 .image {
   border: 2px solid white;
 }
+
+
+@media screen and (max-width: 1100px) {
+
+}
+
+@media screen and (max-width: 960px) {
+  .image_title {
+    font-size: 2.8rem;
+    margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
+  }
+  
+  .btn {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+
+}
+
+@media screen and (max-width: 370px) {
+
+} 

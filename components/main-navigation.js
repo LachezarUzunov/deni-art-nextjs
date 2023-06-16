@@ -11,9 +11,9 @@ const MainNavigation = () => {
         <li>
           <Link className={classes.link} href="/">Начало</Link>
         </li>
-        <li>
+        {/* <li>
           <Link className={classes.link} href="/za-men">За мен</Link>
-        </li>
+        </li> */}
         <li>
           <Link className={classes.link} href="/kartini">Картини</Link>
         </li>

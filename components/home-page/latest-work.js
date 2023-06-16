@@ -30,6 +30,7 @@ const PAINTINGS = [
 ];
 
 const LatestWork = () => {
+
   return (
     <section className={classes.background}>
       <section className="container">
