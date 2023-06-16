@@ -61,6 +61,8 @@
   .btn_mobile {
     display: flex;
     justify-content: center;
+    margin-top: 3.2rem;
+    margin-bottom: 3.2rem;
   }
 }
 

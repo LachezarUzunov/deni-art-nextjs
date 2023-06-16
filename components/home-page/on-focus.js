@@ -7,7 +7,12 @@ import classes from "./on-focus.module.css";
 const OnFocus = () => {
   return (
     <section className={classes.background}>
+      <div className={classes.mobile}>
+        <h2>На фокус</h2>
+        <h3>Басмая</h3>
+      </div>
       <section className={`container ${classes.focus__section}`}>
+        
         <Image
           className={classes.image_onFocus}
           src="/paintings/Басмая.jpg"
@@ -15,9 +20,18 @@ const OnFocus = () => {
           width={600 / (60 / 40)}
           height={600}
         />
+        <div  className={classes.image_onFocus_m}>
+        <Image
+          src="/paintings/Басмая.jpg"
+          alt="Басмая"
+          width={500 / (60 / 40)}
+          height={500}
+        />
+        </div>
+      
         <article className={classes.onfocus__info}>
-          <h2>На фокус</h2>
-          <h3>Басмая</h3>
+          <h2 className={classes.desktop}>На фокус</h2>
+          <h3 className={classes.desktop}>Басмая</h3>
           <p>Размери в сантиметри - 60 на 40</p>
           <p>
           Между пелените и първообраза Младостта трудно се отмива. В пояса й са потънали ветрове, в неотменната и съвършена песен на новородените -  никаква утеха, но как спокойно цъфтят кухите й очи в люспестите пети на вечността и белее облак тлъст, отлъчен от бялото и изтънял.

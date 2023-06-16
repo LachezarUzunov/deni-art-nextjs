@@ -23,12 +23,14 @@ const PaintingsOrDrawings = () => {
   };
 
   return (
-    <section
+    
+    
+      <section
       className={`${classes.card} ${hoveredLeft ? classes.hover__left : null} ${
         hoveredRight ? classes.hover__right : null
       }`}
     >
-      <article
+        <article
         onMouseEnter={mouseLeftEnterHandler}
         onMouseLeave={mouseLeftLeaveHandler}
         className={`${classes.left} ${classes.split}`}
@@ -37,8 +39,8 @@ const PaintingsOrDrawings = () => {
         <Link className={classes.btn} href="/kartini">
           Разгледай
         </Link>
-      </article>
-      <article
+        </article>
+        <article
         onMouseEnter={mouseRightEnterHandler}
         onMouseLeave={mouseRightLeaveHandler}
         className={`${classes.right} ${classes.split}`}
@@ -47,8 +49,12 @@ const PaintingsOrDrawings = () => {
         <Link className={classes.btn} href="/risunki">
           Разгледай
         </Link>
-      </article>
-    </section>
+        </article>
+      </section>
+
+
+
+    
   );
 };
 
