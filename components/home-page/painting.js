@@ -6,6 +6,11 @@ import classes from "./painting.module.css";
 
 const Painting = ({ src, alt, technique, width, height, dimensions, text }) => {
 
+  console.log(text)
+  const splitted = text?.split()
+  console.log(splitted)
+
+
   return (
     <section className={classes.painting__section}>
       <Image className={classes.image} src={src} alt={alt} width={width} height={height} />

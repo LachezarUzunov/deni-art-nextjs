@@ -5,7 +5,9 @@ export default function Painting({ src, alt, technique, width, height, dimension
 
     return (
         <div className={classes.image_section}>
-            <Image src={src} alt={alt} width={width} height={height}/>
+            <div>
+                <Image src={src} alt={alt} width={width} height={height}/>
+            </div>
             <div>
                 <h2>{alt}</h2>
                 <p>Техника на рисуване - {technique}</p>

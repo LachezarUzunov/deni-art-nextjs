@@ -12,15 +12,17 @@ const OnFocus = () => {
         <h3>Басмая</h3>
       </div>
       <section className={`container ${classes.focus__section}`}>
+        <div>
+          <Image
+            className={classes.image_onFocus}
+            src="/paintings/Басмая.jpg"
+            alt="Басмая"
+            width={600 / (60 / 40)}
+            height={600}
+          />
+        </div>
         
-        <Image
-          className={classes.image_onFocus}
-          src="/paintings/Басмая.jpg"
-          alt="Басмая"
-          width={600 / (60 / 40)}
-          height={600}
-        />
-        <div  className={classes.image_onFocus_m}>
+        <div className={`${classes.image_onFocus_m}`}>
         <Image
           src="/paintings/Басмая.jpg"
           alt="Басмая"
