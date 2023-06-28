@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const MainNavigation = () => {
   return (
-    <nav className={classes.nav}>
+    <nav className={`${classes.nav} ${classes.display_m}`}>
       <ul className={classes.nav__links}>
         <li>
           <Link className={classes.link} href="/">Начало</Link>
