@@ -1,9 +1,5 @@
 .painting__section {
-  width: 30%;
-}
-
-.painting {
-  text-align: center;
+  max-width: 48%;
 }
 
 .image_title {
@@ -13,10 +9,12 @@
 }
 
 .btn {
+  margin-bottom: 6rem;
   display: flex;
   gap: 2rem;
   align-items: center;
   transition: 300ms ease-in-out;
+  
 }
 
 .btn:hover {
@@ -27,6 +25,10 @@
 
 .image {
   border: 2px solid white;
+}
+
+.fragment {
+  text-align: left;
 }
 
 

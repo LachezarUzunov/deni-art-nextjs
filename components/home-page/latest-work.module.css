@@ -17,6 +17,7 @@
 }
 
 .painting {
+  margin-top: 2rem;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -34,7 +35,7 @@
 }
 
 @media screen and (max-width: 960px) {
-
+ 
 }
 
 @media screen and (max-width: 450px) {

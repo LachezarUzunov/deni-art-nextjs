@@ -16,10 +16,10 @@ const Painting = ({ src, alt, technique, width, height, dimensions, text }) => {
       <Image className={classes.image} src={src} alt={alt} width={width} height={height} />
       <article className={classes.painting__info}>
         <h3 className={classes.image_title}>{alt}</h3>
-        <p>Размери в сантиметри - {dimensions}</p>
-        <p>Техника на рисуване - {technique}</p>
-        <p>{text}</p>
-        <Link className={`btn__primary ${classes.btn}`} href="/za-men">
+        <p className={classes.fragment}>Размери в сантиметри - {dimensions}</p>
+        <p className={classes.fragment}>Техника на рисуване - {technique}</p>
+        <p className={classes.fragment}>{text}</p>
+        <Link className={`btn__primary ${classes.btn}`} href="/">
           Окачи я в своя дом
           <BsArrowRight />
         </Link>
