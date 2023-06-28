@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Fragment, useState } from "react";
 
 import Link from "next/link";
 import classes from "./paintings-or-drawings.module.css";
@@ -24,9 +24,11 @@ const PaintingsOrDrawings = () => {
 
   return (
     
-    
+
+     
+
       <section
-      className={`${classes.card} ${hoveredLeft ? classes.hover__left : null} ${
+      className={`${classes.display_m} ${classes.card} ${hoveredLeft ? classes.hover__left : null} ${
         hoveredRight ? classes.hover__right : null
       }`}
     >
@@ -52,6 +54,7 @@ const PaintingsOrDrawings = () => {
         </article>
       </section>
 
+     
 
 
     

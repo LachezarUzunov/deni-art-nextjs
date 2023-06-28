@@ -13,7 +13,8 @@ const Painting = ({ src, alt, technique, width, height, dimensions, text }) => {
 
   return (
     <section className={classes.painting__section}>
-      <Image className={classes.image} src={src} alt={alt} width={width} height={height} />
+      <Image className={`${classes.image} ${classes.display}`} src={src} alt={alt} width={width} height={height} />
+      <Image className={`${classes.image} ${classes.display_m}`} src={src} alt={alt} width={`${Math.floor(width / 1.3)}`} height={`${Math.floor(height / 1.3)}`} />
       <article className={classes.painting__info}>
         <h3 className={classes.image_title}>{alt}</h3>
         <p className={classes.fragment}>Размери в сантиметри - {dimensions}</p>

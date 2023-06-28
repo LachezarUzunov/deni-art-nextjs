@@ -43,15 +43,13 @@
 }
 
 @media screen and (max-width: 960px) {
-
+  .focus__section {
+    flex-direction: column;
+    gap: 8rem;
+  }
 }
 
 @media screen and (max-width: 450px) {
-  
-.focus__section {
-  flex-direction: column;
-  gap: 8rem;
-}
 
 .image_onFocus_m {
   display: flex;

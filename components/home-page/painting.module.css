@@ -31,6 +31,14 @@
   text-align: left;
 }
 
+.display {
+  display: block;
+}
+
+.display_m {
+  display: none;
+}
+
 
 @media screen and (max-width: 1100px) {
 
@@ -46,12 +54,24 @@
   .btn {
     gap: 1rem;
   }
+
+  .display {
+    display: none;
+  }
+  
+  .display_m {
+    display: block;
+  }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 720px) {
   .painting__section {
     width: 100%;
   }
+}
+
+@media screen and (max-width: 450px) {
+ 
 
 }
 
