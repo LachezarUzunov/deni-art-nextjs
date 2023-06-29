@@ -7,4 +7,6 @@
 
 .overlay {
     background-color: rgba(0, 0, 0, 0.6);
+    padding-top: 4rem;
+    padding-bottom: 8rem;
 }
