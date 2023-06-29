@@ -12,7 +12,10 @@
 }
 
 .image_onFocus {
-  border: 4px solid var(--gray);
+  border-top: 20px solid var(--gray);
+  border-left: 20px solid var(--dark-gray);
+  border-right: 20px solid var(--dark-gray);
+  border-bottom: 20px solid var(--gray);
 }
 
 .image_onFocus_m {
@@ -45,7 +48,12 @@
 @media screen and (max-width: 960px) {
   .focus__section {
     flex-direction: column;
-    gap: 8rem;
+    gap: 4rem;
+  }
+
+  .centered {
+    display: flex;
+    justify-content: center;
   }
 }
 

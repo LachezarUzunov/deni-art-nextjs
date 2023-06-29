@@ -14,16 +14,20 @@ const Painting = ({ src, alt, technique, width, height, dimensions, text }) => {
   return (
     <section className={classes.painting__section}>
       <Image className={`${classes.image} ${classes.display}`} src={src} alt={alt} width={width} height={height} />
+      <div className={classes.centered}>
       <Image className={`${classes.image} ${classes.display_m}`} src={src} alt={alt} width={`${Math.floor(width / 1.3)}`} height={`${Math.floor(height / 1.3)}`} />
+      </div>
       <article className={classes.painting__info}>
         <h3 className={classes.image_title}>{alt}</h3>
         <p className={classes.fragment}>Размери в сантиметри - {dimensions}</p>
         <p className={classes.fragment}>Техника на рисуване - {technique}</p>
         <p className={classes.fragment}>{text}</p>
-        <Link className={`btn__primary ${classes.btn}`} href="/">
+        <div className={classes.centered}>
+        <Link className={`btn__primary ${classes.btn}`} href="/kartini">
           Окачи я в своя дом
           <BsArrowRight />
         </Link>
+        </div>
       </article>
     </section>
   );

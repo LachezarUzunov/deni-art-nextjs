@@ -12,7 +12,7 @@ const OnFocus = () => {
         <h3>Басмая</h3>
       </div>
       <section className={`container ${classes.focus__section}`}>
-        <div>
+        <div className={classes.centered}>
           <Image
             className={classes.image_onFocus}
             src="/paintings/Басмая.jpg"
@@ -23,12 +23,12 @@ const OnFocus = () => {
         </div>
         
         <div className={`${classes.image_onFocus_m}`}>
-        <Image
-          src="/paintings/Басмая.jpg"
-          alt="Басмая"
-          width={500 / (60 / 40)}
-          height={500}
-        />
+          <Image
+            src="/paintings/Басмая.jpg"
+            alt="Басмая"
+            width={500 / (60 / 40)}
+            height={500}
+          />
         </div>
       
         <article className={classes.onfocus__info}>
@@ -41,9 +41,12 @@ const OnFocus = () => {
    Отпускали се откосите сълзи, просторно заспали, измамно вплетени. Или това бил дяволът само със захапаната си усмивка на грохот бездомно кух?
 
           </p>
-          <Link className={`btn__primary ${classes.btn}`} href="/za-men">
-            Окачи я в своя дом <BsArrowRight />
-          </Link>
+          <div className={classes.centered}>
+            <Link className={`btn__primary ${classes.btn}`} href="/za-men">
+              Окачи я в своя дом <BsArrowRight />
+            </Link>
+          </div>
+         
         </article>
       </section>
     </section>

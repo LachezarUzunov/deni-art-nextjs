@@ -13,6 +13,7 @@ const Heading = () => {
       </div>
       <Image className={classes.display} src="/site/deni.jpg" alt="artist" width={480} height={650} />
       <Image className={classes.display_m} src="/site/deni.jpg" alt="artist" width={369} height={500} />
+      <Image className={classes.display_xsm} src="/site/deni.jpg" alt="artist" width={295} height={400} />
       </article>
     </section>
   );

@@ -30,6 +30,10 @@
   display: none;
 }
 
+.active {
+  border-bottom: 1px solid var(--violet);
+}
+
 
 /* ============= MEDIA QUERIES (MEDIUM DEVICES) ============== */
 @media screen and (max-width: 1200px) {
@@ -38,7 +42,7 @@
     inset: 0 0 0 30%;
     height: 100%;
     justify-content: unset;
-    gap: 2rem;
+    gap: 2.6rem;
     padding-top: 10rem;
     padding-right: 14rem;
     padding-left: 0;
@@ -53,7 +57,7 @@
 
   .closed {
     transform: translateX(100%);
-    transition: transform 500ms ease-in-out;
+    transition: transform 700ms ease-in-out;
   }
 
   .open {
