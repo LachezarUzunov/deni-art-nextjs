@@ -1,5 +1,50 @@
 .image_section {
     display: flex;
-    padding-top: 6rem;
-    gap: 4rem;
+    padding-top: 10rem;
+    gap: 6rem;
+    margin-top: 2rem;
 }
+
+.display {
+    display: block;
+}
+
+.display_sm {
+    display: none;
+}
+
+
+@media screen and (max-width: 860px) {
+    .display {
+        display: none;
+    }
+    
+    .display_sm {
+        display: block;
+    }
+
+    .image_section {
+        gap: 4rem;
+    }
+    
+}
+
+/* 
+
+@media screen and (max-width: 1100px) {
+
+}
+
+@media screen and (max-width: 860px) {
+
+}
+
+@media screen and (max-width: 450px) {
+
+}
+
+@media screen and (max-width: 370px) {
+
+}  
+
+*/

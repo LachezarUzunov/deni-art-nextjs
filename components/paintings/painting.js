@@ -5,7 +5,10 @@ export default function Painting({ src, alt, technique, width, height, dimension
 
     return (
         <div className={classes.image_section}>
-            <div>
+            <div className={classes.display}>
+                <Image src={src} alt={alt} width={width * 1.2} height={height * 1.2}/>
+            </div>
+            <div className={classes.display_sm}>
                 <Image src={src} alt={alt} width={width} height={height}/>
             </div>
             <div>
