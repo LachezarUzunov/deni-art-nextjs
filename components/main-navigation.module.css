@@ -1,9 +1,15 @@
 .nav {
+  position: fixed;
+  inset: 0;
   display: flex;
   justify-content: space-around;
   height: 10vh;
+  width: 100%;
   background-color: var(--deep-purple);
   align-items: center;
+
+  /* padding: 0 6rem 0 10rem; */
+  backdrop-filter: blur(2rem);
 }
 
 .nav__links {
@@ -20,8 +26,79 @@
   color: var(--gray);
 }
 
-@media screen and (max-width: 500px) {
-  .display_m {
-    display: none;
+.mobile__btn {
+  display: none;
+}
+
+
+/* ============= MEDIA QUERIES (MEDIUM DEVICES) ============== */
+@media screen and (max-width: 1200px) {
+  .nav {
+    flex-direction: column;
+    inset: 0 0 0 30%;
+    height: 100%;
+    justify-content: unset;
+    gap: 2rem;
+    padding-top: 10rem;
+    padding-right: 14rem;
+    padding-left: 0;
+    align-items: center;
+  }
+
+  .nav__links {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .closed {
+    transform: translateX(100%);
+    transition: transform 500ms ease-in-out;
+  }
+
+  .open {
+    transform: translateX(0%);
+  }
+
+ 
+
+  .mobile__btn {
+    display: block;
+    position: fixed;
+    right: 0rem;
+    top: 0rem;
+    padding: 1.4rem;
+    border-radius: 0 0 0 50%;
+    color: var(--gray);
+    aspect-ratio: 1;
+    z-index: 9999;
+    font-size: 1.4rem;
+    cursor: pointer;
+    background-color: var(--deep-purple);
+    backdrop-filter: blur(2rem);
+  }
+
+
+  .lang_change_btn {
+    display: block;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    background-color: transparent;
+  }
+
+  .lang_change_btn img {
+    width: 60px;
+  }
+}
+/* ============= MEDIA QUERIES (SMALL DEVICES) ============== */
+@media screen and (max-width: 450px) {
+
+}
+
+/* ============= MEDIA QUERIES (EXTRA SMALL DEVICES) ============== */
+@media screen and (max-width: 360px) {
+  .nav {
+    padding-right: 10rem;
   }
 }
