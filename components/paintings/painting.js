@@ -6,10 +6,10 @@ export default function Painting({ src, alt, technique, width, height, dimension
     return (
         <div className={classes.image_section}>
             <div className={`${classes.display}`}>
-                <Image src={src} alt={alt} width={width * 1.2} height={height * 1.2}/>
+                <Image src={src} alt={alt} width={`${Math.floor(width * 1.2)}`} height={`${Math.floor(height * 1.2)}`}/>
             </div>
             <div className={`${classes.display_sm} ${classes.centered}`}>
-                <Image src={src} alt={alt} width={width} height={height}/>
+                <Image src={src} alt={alt} width={`${Math.floor(width * 0.9)}`} height={`${Math.floor(height * 0.9)}`}/>
             </div>
             <div>
                 <h2 className={classes.title}>{alt}</h2>

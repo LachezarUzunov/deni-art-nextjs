@@ -51,6 +51,16 @@
     }
 }
 
+@media screen and (max-width: 500px) {
+    .display {
+        display: none;
+    }
+    
+    .display_sm {
+        display: block;
+    }
+}
+
 @media screen and (max-width: 380px) {
     .display {
         display: none;
