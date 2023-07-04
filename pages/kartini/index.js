@@ -354,6 +354,32 @@ const PAINTINGS = [
       продадена: false,
       sold: false
     },
+    {
+      key: "28",
+      height: 60,
+      width: 40,
+      dimensions: "60 на 40",
+      enDimensions: "60 to 40",
+      name: "Преди възкресение",
+      enName: "Before Resurrection",
+      technique: "акрил, смесена техника",
+      enTechnique: "acrylic, mixed media",
+      продадена: false,
+      sold: false
+    },
+    {
+      key: "29",
+      height: 60,
+      width: 40,
+      dimensions: "60 на 40",
+      enDimensions: "60 to 40",
+      name: "Денонощие",
+      enName: "Around The Clock",
+      technique: "акрил, смесена техника",
+      enTechnique: "acrylic, mixed media",
+      продадена: false,
+      sold: false
+    },
   ];
 
 export default function Paintings() {
