@@ -1,12 +1,22 @@
 import Image from 'next/image';
 import classes from './painting.module.css';
+import React, { useState } from 'react';
+import PaintingOverlayModal from '../layout/paintingOverlay';
 
 export default function Painting({ src, alt, technique, width, height, dimensions, text }) {
+    const [showImgOverlay, setShowImgOverlay] = useState(false);
+    const onClose = () => {
+        setShowImgOverlay(false)
+    }
 
     return (
+
+        <React.Fragment>
+        {showImgOverlay && <PaintingOverlayModal img={src} alt={alt} width={width} height={height} onClose={onClose}/>}
+        
         <div className={classes.image_section}>
             <div className={`${classes.display}`}>
-                <Image src={src} alt={alt} width={`${Math.floor(width * 1.2)}`} height={`${Math.floor(height * 1.2)}`}/>
+                <Image onClick={() => setShowImgOverlay(true)} src={src} alt={alt} width={`${Math.floor(width * 1.2)}`} height={`${Math.floor(height * 1.2)}`}/>
             </div>
             <div className={`${classes.display_sm} ${classes.centered}`}>
                 <Image src={src} alt={alt} width={`${Math.floor(width * 0.9)}`} height={`${Math.floor(height * 0.9)}`}/>
@@ -18,5 +28,6 @@ export default function Painting({ src, alt, technique, width, height, dimension
                 <p className={classes.text}>{text}</p>
             </div>  
         </div>
+        </React.Fragment>
     )
 }
