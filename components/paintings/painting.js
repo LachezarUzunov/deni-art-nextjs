@@ -3,7 +3,7 @@ import classes from './painting.module.css';
 import React, { useState } from 'react';
 import PaintingOverlayModal from '../layout/paintingOverlay';
 
-export default function Painting({ src, alt, technique, width, height, dimensions, text }) {
+export default function Painting({ src, alt, name, enName, technique, enTechnique, width, height, dimensions, heading, enHeading, text, enText, bulgarian }) {
     const [showImgOverlay, setShowImgOverlay] = useState(false);
     const onClose = () => {
         setShowImgOverlay(false)
@@ -22,10 +22,11 @@ export default function Painting({ src, alt, technique, width, height, dimension
                 <Image src={src} alt={alt} width={`${Math.floor(width * 0.9)}`} height={`${Math.floor(height * 0.9)}`}/>
             </div>
             <div>
-                <h2 className={classes.title}>{alt}</h2>
-                <p>Техника на рисуване - {technique}</p>
-                <p>Размери в сантиметри - {dimensions}</p>
-                <p className={classes.text}>{text}</p>
+                <h2 className={classes.title}>{ bulgarian ? `${name}` : `${enName}`}</h2>
+                <p>{ bulgarian ? `Техника на рисуване - ${technique}` : `Drawing technique - ${enTechnique}`}</p>
+                <p>{ bulgarian ? `Размери в сантиметри - ${dimensions}` : `Dimensions in sentimeters - ${dimensions}`}</p>
+                <h3>{ bulgarian ? `${heading}` : `${enHeading}`}</h3>
+                <p className={classes.text}>{ bulgarian ? `${text}` : `${enText}`}</p>
             </div>  
         </div>
         </React.Fragment>

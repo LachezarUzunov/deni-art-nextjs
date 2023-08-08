@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Painting from './painting';
 import PaintingOverlayModal from '../layout/paintingOverlay';
 
-const PaintingWithModal = ({ src, alt, technique, width, height, dimensions, text }) => {
+const PaintingWithModal = ({ src, alt, name, enName, technique, enTechnique, width, height, dimensions, heading, enHeading, text, enText, bulgarian }) => {
   const [showImgOverlay, setShowImgOverlay] = useState(false);
 
   const onClose = () => {
@@ -11,9 +11,29 @@ const PaintingWithModal = ({ src, alt, technique, width, height, dimensions, tex
 
 return (
     <React.Fragment>
-      <Painting src={src} alt={alt} technique={technique} width={width} height={height} dimensions={dimensions} text={text} onClick={() => setShowImgOverlay(true)} />
+      <Painting 
+        src={src} 
+        alt={alt}
+        name={name}
+        enName={enName}
+        technique={technique}
+        enTechnique={enTechnique}
+        width={width} 
+        height={height} 
+        dimensions={dimensions}
+        heading={heading} 
+        enHeading={enHeading}
+        text={text}
+        enText={enText}
+        bulgarian={bulgarian}
+        onClick={() => setShowImgOverlay(true)} />
       {showImgOverlay && (
-        <PaintingOverlayModal img={src} alt={alt} width={width} height={height} onClose={onClose} />
+        <PaintingOverlayModal 
+          img={src} 
+          alt={alt} 
+          width={width} 
+          height={height} 
+          onClose={onClose} />
       )}
     </React.Fragment>
   );

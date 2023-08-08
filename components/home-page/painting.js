@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import classes from "./painting.module.css";
 
-const Painting = ({ src, alt, technique, width, height, dimensions, text, bulgarian }) => {
+const Painting = ({ src, name, enName, alt, technique, enTechnique, width, height, dimensions, title, enTitle, text, enText, bulgarian }) => {
 
   const splitted = text?.split()
 
@@ -18,13 +18,14 @@ const Painting = ({ src, alt, technique, width, height, dimensions, text, bulgar
         <Image className={`${classes.image} ${classes.display_m}`} src={src} alt={alt} width={`${Math.floor(width / 1.3)}`} height={`${Math.floor(height / 1.3)}`} />
       </div>
       <article className={classes.painting__info}>
-        <h3 className={classes.image_title}>{alt}</h3>
-        <p className={classes.fragment}>{bulgarian ? `Размери в сантиметри - ${dimensions}` : `Dimensions in sentimeters - ${dimensions}`}</p>
-        <p className={classes.fragment}>Техника на рисуване - {technique}</p>
-        <p className={classes.fragment}>{text}</p>
+        <h3 className={classes.image_title}>{ bulgarian ? `${name}` : `${enName}`}</h3>
+        <p className={classes.fragment}>{ bulgarian ? `Размери в сантиметри - ${dimensions}` : `Dimensions in sentimeters - ${dimensions}`}</p>
+        <p className={classes.fragment}>{ bulgarian ? `Техника на рисуване - ${technique}` : `Drawing technique - ${enTechnique}`}</p>
+        <h2 className={classes.title}>{ bulgarian ? `${title}` : `${enTitle}`}</h2>
+        <p className={classes.fragment}>{ bulgarian ? `${text}` : `${enText}`}</p>
         <div className={classes.centered}>
         <Link className={`btn__primary ${classes.btn}`} href="/contact-me">
-          Окачи я в своя дом
+          { bulgarian ? 'Окачи я в своя дом' : 'Hang it in your home'}
           <BsArrowRight />
         </Link>
         </div>
