@@ -25,8 +25,8 @@ export default function Painting({ src, alt, name, enName, technique, enTechniqu
                 <h2 className={classes.title}>{ bulgarian ? `${name}` : `${enName}`}</h2>
                 <p>{ bulgarian ? `Техника на рисуване - ${technique}` : `Drawing technique - ${enTechnique}`}</p>
                 <p>{ bulgarian ? `Размери в сантиметри - ${dimensions}` : `Dimensions in sentimeters - ${dimensions}`}</p>
-                <h3>{ bulgarian ? `${heading}` : `${enHeading}`}</h3>
-                <p className={classes.text}>{ bulgarian ? `${text}` : `${enText}`}</p>
+                {heading && <h3>{ bulgarian ? `${heading}` : `${enHeading}`}</h3>}
+                {text && <p className={classes.text}>{ bulgarian ? `${text}` : `${enText}`}</p>}
             </div>  
         </div>
         </React.Fragment>
