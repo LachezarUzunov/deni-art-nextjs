@@ -2,19 +2,19 @@ import { createContext, useState } from "react";
 
 const LanguageContext = createContext({
     version: "",
-    changeLang: function() {},
+    changeLang: function(english) {},
 });
 
 export function LanguageContextProvider(props) {
-    const [en, setEn] = useState(false);
+    const [bulgarian, setBulgarian] = useState(true);
 
     function changeLangHandler(english) {
         
-        if (english) setEn(true)
-        else setEn(false)
+        if (english) setBulgarian(false)
+        else setBulgarian(true)
     }
 
-    const context = {lang: en, changeLang: changeLangHandler}
+    const context = { version: bulgarian, changeLang: changeLangHandler }
 
     return (
         <LanguageContext.Provider value={context}>

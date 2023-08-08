@@ -40,14 +40,14 @@ const PAINTINGS = [
   },
 ];
 
-const LatestWork = () => {
+const LatestWork = ({ bulgarian }) => {
   
   return (
     <section className={classes.background}>
       <section className="container">
         <div className={classes.painting__header}>
-          <h2>Последни творби</h2>
-          <h3>Върху какво работя напоследък</h3>
+          <h2>{ bulgarian ? 'Последни творби' : 'Latest Works'}</h2>
+          <h3>{ bulgarian ? 'Върху какво работя напоследък' : 'What I am working on lately'}</h3>
         </div>
         <article className={classes.painting}>
           {PAINTINGS.map((p) => {

@@ -34,6 +34,10 @@
   border-bottom: 1px solid var(--violet);
 }
 
+.btn_flag {
+  display: block;
+}
+
 
 /* ============= MEDIA QUERIES (MEDIUM DEVICES) ============== */
 @media screen and (max-width: 1200px) {
@@ -80,6 +84,10 @@
     cursor: pointer;
     background-color: var(--deep-purple);
     backdrop-filter: blur(2rem);
+  }
+
+  .btn_flag {
+    display: none;
   }
 
 

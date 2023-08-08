@@ -1,5 +1,6 @@
 import Painting from '@/components/paintings/painting';
 import classes from './index.module.css'
+import PaintingWithModal from '@/components/paintings/paintingWithModal';
 
 const PAINTINGS = [
     {
@@ -701,7 +702,7 @@ export default function Drawings() {
             <section className="container">
                 {PAINTINGS.map(p => {
                     return (
-                        <Painting
+                        <PaintingWithModal
                             key={p.key}
                             src={`/drawings/${p.name}.jpg`}
                             alt={p.name}

@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+import { useState } from "react";
 
 import Link from "next/link";
 import classes from "./paintings-or-drawings.module.css";
@@ -38,7 +38,7 @@ const PaintingsOrDrawings = () => {
         className={`${classes.left} ${classes.split}`}
       >
         <h1 className={classes.title}>Картини</h1>
-        <Link className={classes.btn} href="/kartini">
+        <Link className={classes.btn} href="/paintings">
           Разгледай
         </Link>
         </article>
@@ -48,7 +48,7 @@ const PaintingsOrDrawings = () => {
         className={`${classes.right} ${classes.split}`}
       >
         <h1 className={classes.title}>Рисунки</h1>
-        <Link className={classes.btn} href="/risunki">
+        <Link className={classes.btn} href="/drawings">
           Разгледай
         </Link>
         </article>

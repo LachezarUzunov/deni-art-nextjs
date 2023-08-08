@@ -5,9 +5,13 @@ import { CgClose } from "react-icons/cg";
 import classes from "./main-navigation.module.css";
 
 import Link from "next/link";
-import { Fragment, useState } from "react";
+import { Fragment, useState, useContext } from "react";
+import Image from "next/image";
+import LanguageContext from "@/store/language";
 
-const MainNavigation = () => {
+const MainNavigation = ({ bulgarianVersion }) => {
+  const languageCtx = useContext(LanguageContext);
+
   const [active, setActive] = useState("home");
   const [openMobile, setOpenMobile] = useState(true);
   const [bulgarian, setBulgarian] = useState(true);
@@ -17,20 +21,22 @@ const MainNavigation = () => {
     setOpenMobile(true);
   };
 
+  const onMobileFlagClick = (e) => {
+    if (e.target.name === "bulgarian") {
+      languageCtx.changeLang(true)
+      setBulgarian(false);
+    } else {
+      languageCtx.changeLang(false)
+      setBulgarian(true);
+    }
+
+    setOpenMobile(true);
+  };
+
   return (
     <Fragment>
     {bulgarian ? (
       <nav>
-        {/* <button
-          className={classes.lang_change_btn}
-          onClick={() => setBulgarian(false)}
-        >
-          <img
-            src={require("../../assets/britainflag.png")}
-            className="bg__heading"
-            alt="britain_flag"
-          ></img>
-        </button> */}
         {openMobile ? (
           <button
             onClick={() => setOpenMobile(false)}
@@ -70,7 +76,7 @@ const MainNavigation = () => {
               className={`${classes.link} ${
                 active === "painting" ? classes.active : ""
               }`}
-              href="/kartini"
+              href="/paintings"
             >
               Картини
             </Link>
@@ -81,7 +87,7 @@ const MainNavigation = () => {
               className={`${classes.link} ${
                 active === "drawing" ? classes.active : ""
               }`}
-              href="/risunki"
+              href="/drawings"
             >
               Рисунки
             </Link>
@@ -92,7 +98,7 @@ const MainNavigation = () => {
               className={`${classes.link } ${
                 active === "contact" ? classes.active : ""
               }`}
-              href="/kontakti"
+              href="/contact-me"
             >
               Контакти
             </Link>
@@ -108,28 +114,20 @@ const MainNavigation = () => {
           </Link>
         </li>
           <li>
-            {/* <img
+            <Image
               onClick={onMobileFlagClick}
               name="bulgarian"
-              src={require("../../assets/britainflag.png")}
+              src="/site/uk.png"
+              width={32}
+              height={32}
               className={classes.btn__flag}
               alt="britain_flag"
-            ></img> */}
+            ></Image>
           </li>
         </ul>
       </nav>
     ) : (
       <nav>
-        {/* <button
-          className={classes.lang_change_btn}
-          onClick={() => setBulgarian(true)}
-        >
-          <img
-            src={require("../../assets/bgflag.png")}
-            className="bg__heading"
-            alt="bulgarian_flag"
-          ></img>
-        </button> */}
         {openMobile ? (
           <button
             onClick={() => setOpenMobile(false)}
@@ -155,7 +153,9 @@ const MainNavigation = () => {
           <li onClick={onMenuClick}>
             <Link
               name="home"
-              className={`${active === "home" ? classes.active : ""}`}
+              className={`${classes.link} ${
+                active === "home" ? classes.active : ""
+              }`}
               href="/"
             >
               Home
@@ -164,7 +164,9 @@ const MainNavigation = () => {
           <li onClick={onMenuClick}>
             <Link
               name="painting"
-              className={`${active === "painting" ? classes.active : ""}`}
+              className={`${classes.link} ${
+                active === "painting" ? classes.active : ""
+              }`}
               href="/paintings"
             >
               Paintings
@@ -173,7 +175,9 @@ const MainNavigation = () => {
           <li onClick={onMenuClick}>
             <Link
               name="drawing"
-              className={`${active === "drawing" ? classes.active : ""}`}
+              className={`${classes.link} ${
+                active === "drawing" ? classes.active : ""
+              }`}
               href="/drawings"
             >
               Drawings
@@ -182,73 +186,40 @@ const MainNavigation = () => {
           <li onClick={onMenuClick}>
             <Link
               name="contact"
-              className={`${active === "contact" ? classes.active : ""}`}
+              className={`${classes.link} ${
+                active === "contact" ? classes.active : ""
+              }`}
               href="/contact-me"
             >
               Contact Me
             </Link>
           </li>
-          {/* <li>
-            <img
+          <li>
+          <Link className={classes.link} href="https://www.facebook.com">
+            <BsFacebook />
+          </Link>
+        </li>
+        <li>
+          <Link className={classes.link} href="/">
+            <BsInstagram />
+          </Link>
+        </li>
+          <li>
+            <Image
               onClick={onMobileFlagClick}
               name="britain"
-              src={require("../../assets/bgflag.png")}
+              src="/site/bg.png"
+              width={32}
+              height={32}
               className={classes.btn__flag}
               alt="bulgarian_flag"
-            ></img>
-          </li> */}
+            ></Image>
+          </li>
         </ul>
       </nav>
     )}
   </Fragment>
   )
-
-  // return (
-  //   <nav className={`${classes.nav} ${classes.display_m}`}>
-  //      {openMobile ? (
-  //           <button
-  //             onClick={() => setOpenMobile(false)}
-  //             className={`${classes.mobile__btn}`}
-  //           >
-  //             <GiHamburgerMenu />
-  //           </button>
-  //         ) : (
-  //           <button
-  //             onClick={() => setOpenMobile(true)}
-  //             className={`${classes.mobile__btn}`}
-  //           >
-  //             <CgClose />
-  //           </button>
-  //         )}
-
-  //     <ul className={classes.nav__links}>
-  //       <li>
-  //         <Link className={classes.link} href="/">Начало</Link>
-  //       </li>
-  //       <li>
-  //         <Link className={classes.link} href="/kartini">Картини</Link>
-  //       </li>
-  //       <li>
-  //         <Link className={classes.link} href="/risunki">Рисунки</Link>
-  //       </li>
-  //       <li>
-  //         <Link className={classes.link} href="/kontakti">Контакти</Link>
-  //       </li>
-  //     </ul>
-  //     <ul className={classes.nav__socials}>
-        // <li>
-        //   <Link className={classes.link} href="https://www.facebook.com">
-        //     <BsFacebook />
-        //   </Link>
-        // </li>
-        // <li>
-        //   <Link className={classes.link} href="/">
-        //     <BsInstagram />
-        //   </Link>
-        // </li>
-  //     </ul>
-  //   </nav>
-  // );
 };
 
 export default MainNavigation;

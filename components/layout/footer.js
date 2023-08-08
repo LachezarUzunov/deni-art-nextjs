@@ -3,8 +3,14 @@ import { BsInstagram } from "react-icons/bs";
 
 import classes from "./footer.module.css";
 import Link from "next/link";
+import { useContext } from "react";
+import LanguageContext from "@/store/language";
 
 const Footer = () => {
+  const languageCtx = useContext(LanguageContext);
+
+  const langVersion = languageCtx.version;
+
   return (
     <section className={classes.bg}>
       <article className="container">
@@ -12,27 +18,22 @@ const Footer = () => {
           <ul className={classes.nav__links}>
             <li>
               <Link className={classes.lis} href="/">
-                НАЧАЛО
+                {langVersion ? 'НАЧАЛО' : 'HOME'}
               </Link>
             </li>
             <li>
-              <Link className={classes.lis} href="/za-men">
-                ЗА МЕН
+              <Link className={classes.lis} href="/paintings">
+                { langVersion ? 'КАРТИНИ' : 'PAINTINGS'}
               </Link>
             </li>
             <li>
-              <Link className={classes.lis} href="/kartini">
-                КАРТИНИ
+              <Link className={classes.lis} href="/drawings">
+                { langVersion ? 'РИСУНКИ' : 'DRAWINGS'}
               </Link>
             </li>
             <li>
-              <Link className={classes.lis} href="/risunki">
-                РИСУНКИ
-              </Link>
-            </li>
-            <li>
-              <Link className={classes.lis} href="/kontakti">
-                КОНТАКТИ
+              <Link className={classes.lis} href="/contact-me">
+                { langVersion ? 'КОНТАКТИ' : 'CONTACTS'}
               </Link>
             </li>
           </ul>
