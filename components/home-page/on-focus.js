@@ -9,7 +9,7 @@ const OnFocus = ({ bulgarian }) => {
     <section className={classes.background}>
       <div className={classes.mobile}>
         <h2>{ bulgarian ? 'На фокус' : 'On focus'}</h2>
-        <h3>Басмая</h3>
+        <h3>{ bulgarian ? 'Басмая' : 'Basmaya'}</h3>
       </div>
       <section className={`container ${classes.focus__section}`}>
         <div className={classes.centered}>

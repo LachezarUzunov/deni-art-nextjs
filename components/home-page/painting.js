@@ -4,12 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import classes from "./painting.module.css";
 
-const Painting = ({ src, alt, technique, width, height, dimensions, text }) => {
+const Painting = ({ src, alt, technique, width, height, dimensions, text, bulgarian }) => {
 
-  console.log(text)
   const splitted = text?.split()
-  console.log(splitted)
-
 
   return (
     <section className={classes.painting__section}>
@@ -22,11 +19,11 @@ const Painting = ({ src, alt, technique, width, height, dimensions, text }) => {
       </div>
       <article className={classes.painting__info}>
         <h3 className={classes.image_title}>{alt}</h3>
-        <p className={classes.fragment}>Размери в сантиметри - {dimensions}</p>
+        <p className={classes.fragment}>{bulgarian ? `Размери в сантиметри - ${dimensions}` : `Dimensions in sentimeters - ${dimensions}`}</p>
         <p className={classes.fragment}>Техника на рисуване - {technique}</p>
         <p className={classes.fragment}>{text}</p>
         <div className={classes.centered}>
-        <Link className={`btn__primary ${classes.btn}`} href="/kartini">
+        <Link className={`btn__primary ${classes.btn}`} href="/contact-me">
           Окачи я в своя дом
           <BsArrowRight />
         </Link>

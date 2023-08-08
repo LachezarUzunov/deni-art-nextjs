@@ -37,7 +37,7 @@ const AboutMe = ({ bulgarian }) => {
             
             </p>
             <div className={classes.btn_mobile}>
-              <Link className={`btn__primary ${classes.btn}`} href="/kontakti">
+              <Link className={`btn__primary ${classes.btn}`} href="/contact-me">
                 { bulgarian ? 'Пишете ми ' : 'Drop me a line '} <BsArrowRight />
               </Link>
             </div>

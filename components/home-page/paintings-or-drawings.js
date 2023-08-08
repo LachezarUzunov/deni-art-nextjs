@@ -3,7 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import classes from "./paintings-or-drawings.module.css";
 
-const PaintingsOrDrawings = () => {
+const PaintingsOrDrawings = ({ bulgarian }) => {
   const [hoveredLeft, setIsHoveredLeft] = useState(true);
   const [hoveredRight, setIsHoveredRight] = useState(false);
   const mouseLeftEnterHandler = () => {
@@ -23,10 +23,6 @@ const PaintingsOrDrawings = () => {
   };
 
   return (
-    
-
-     
-
       <section
       className={`${classes.display_m} ${classes.card} ${hoveredLeft ? classes.hover__left : null} ${
         hoveredRight ? classes.hover__right : null
@@ -37,9 +33,9 @@ const PaintingsOrDrawings = () => {
         onMouseLeave={mouseLeftLeaveHandler}
         className={`${classes.left} ${classes.split}`}
       >
-        <h1 className={classes.title}>Картини</h1>
+        <h1 className={classes.title}>{ bulgarian ? 'Картини' : 'Paintings'}</h1>
         <Link className={classes.btn} href="/paintings">
-          Разгледай
+          { bulgarian ? 'Разгледай' : 'Take a look'}
         </Link>
         </article>
         <article
@@ -47,17 +43,12 @@ const PaintingsOrDrawings = () => {
         onMouseLeave={mouseRightLeaveHandler}
         className={`${classes.right} ${classes.split}`}
       >
-        <h1 className={classes.title}>Рисунки</h1>
+        <h1 className={classes.title}>{ bulgarian ? 'Рисунки' : 'Drawings'}</h1>
         <Link className={classes.btn} href="/drawings">
-          Разгледай
+          { bulgarian ? 'Разгледай' : 'Take a look'}
         </Link>
         </article>
       </section>
-
-     
-
-
-    
   );
 };
 
