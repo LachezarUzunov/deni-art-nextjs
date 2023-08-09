@@ -27,11 +27,11 @@ const AboutMe = ({ bulgarian }) => {
             { bulgarian ? 
               <p className={`shadow`}>Родена съм през ноември 1989г., един мил скорпион. 😉</p>
             :
-              <p className={`${classes.henni} shadow`}>I was born November , 1989., a kind scorpio. 😉</p>
+              <p className={`${classes.henni} shadow`}>I was born November, 1989., a kind scorpio. 😉</p>
             }
 
             { bulgarian ? 
-              <p className={`shadow`}>През 2008 г. завърших ЕГ &quot;Иван Вазов&quot; гр. Смолян с немски  и английски език. Същата година продължих образованието си в СУ &quot;Св. Климент Охридски&quot; , специалност Немска филология, а впоследствие записах магистратура &quot;Философия на съзнанието на езика&quot;. През 2022 г. се дипломирах в магистърската програма на НБУ &quot;Криминология и политики за превенция на престъпността.&quot;</p>
+              <p className={`shadow`}>През 2008 г. завърших ЕГ &quot;Иван Вазов&quot; гр. Смолян с немски  и английски език. Същата година продължих образованието си в СУ &quot;Св. Климент Охридски&quot;, специалност Немска филология, а впоследствие записах магистратура &quot;Философия на съзнанието на езика&quot;. През 2022 г. се дипломирах в магистърската програма на НБУ &quot;Криминология и политики за превенция на престъпността.&quot;</p>
             :
               <p className={`${classes.henni} shadow`}>In 2008, I graduated from Language School &quot;Ivan Vazov&quot; in Smolyan with German and English. The same year, I continued my education at Sofia University &quot;St. Kliment Ohridski&quot;, majoring in German philology. I subsequently enrolled in a Master&apos;s degree in &quot;Philosophy of Mind and Language&quot;. In 2022, I graduated from the Master&apos;s program of the NBU, &quot;Criminology and Crime Prevention Policies.&quot;</p>
             }
