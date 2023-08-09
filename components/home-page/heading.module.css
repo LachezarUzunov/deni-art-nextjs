@@ -20,6 +20,18 @@
   border-bottom: 1px solid var(--violet);
 }
 
+.henni {
+  font-family: 'Henny Penny', cursive;
+  line-height: 2;
+  letter-spacing: 0.2rem;
+}
+
+.typewritter {
+  font-family: 'Special Elite', cursive;
+  letter-spacing: 0.2rem;
+  font-size: 3.2rem;
+}
+
 .display {
   display: block;
 }

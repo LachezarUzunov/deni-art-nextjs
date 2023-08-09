@@ -3,6 +3,7 @@ import classes from './index.module.css'
 import PaintingWithModal from '@/components/paintings/paintingWithModal';
 import { useContext } from 'react';
 import LanguageContext from '@/store/language';
+import { getAllPaintings } from '@/lib/paintings-util';
 
 const PAINTINGS = [
     {
@@ -228,7 +229,7 @@ const PAINTINGS = [
       heading: "Зло природно бебе",
       enHeading: "Natural Evil Baby",
       text: "Тъмноогненено \n раждат природните родилни домове \n празни катафалки - \n пещерни гробища на самотата, \n в които черното и червеното, \n (крайно отрицателни качества), \n неголяма част от земната повърхност, \n са просто безвъзвратни съчувствия по блян  \n повити в плача на световното бебе - \n унило зло като перпендикулярна ос вглъбен живот. \n\n Угнетената демонична глава на съвестта се подава от алчния търбух на завистта \n като гол, бездомен нерв- \n като тегобно тегло от грях, \n като вътрешността на нищото, \n като огнена октава, свита в благослов, \n като гробът на Амин. \n\n Слънцето смъртта в орбитата си повива и започва да мълчи с изхлузени очи.",
-      enText: ""
+      enText: "Like Darkened fire the natural maternity homes give birth to hollow coffins - cave cemeteries of solitude, in which the black and the red, (extremely negative qualities), a small part of the earth's surface, are frankly unrequited sympathies in a dream wrapped in the howl of the world's baby - disheartened evil as a perpendicular axis of buried life. The abused demonic head of conscience is thrusting out of the greedy envy belly like a naked, homeless nerve - like a heavy weight of sin, like the inside of nowhere like a fiery octave curled in a  blessing, like Amen's tomb. The sun of death twists in its own orbit and begins to be closed-up with drooping eyes."
     },
     {
       key: "16",
@@ -240,10 +241,10 @@ const PAINTINGS = [
       technique: "акрил, смесена техника",
       enTechnique: "acrylic, mixed media",
       sold: false,
-      heading: "",
-      enHeading: "",
-      text: "",
-      enText: ""
+      heading: "Костюмар",
+      enHeading: "The Costume Man",
+      text: "Каменен восък нервните пръсти на Извънразумността безсърдечно в трупа на полумрака впива. Хълбокът й от стапянето на огъня ридае, безконечно в походката си искрящо глъхнещ оттича. Едно огледало пламтящо отражението на разума ясно скрива, погледа му огнестрелно в пъкъл жилещ инкрустира, ала колкото и да се мъчи, огънят му не е тъй неистов. Разумният костюмар претоплено въздъхва в архетипа на формата си, оптималният му светлинен поток пространството в кристалната решетка на стапящото се изригване лъжливо свежда. Измеренията сами в себе си прибират се и восъкът струи отвесен отдън огледалното стъкло, сякаш тайната на наблюдението бдението над тънкия слой илюзорна любов мрачно препускащо пропуска. Огненият взор закръгля и развиделява потайностите в пепелта по слънцето, а небето дреме в метала на своя здрач. Костюмарът лети като молец към прашасало минало. Ридаее дълго като дъхава приумица в нощна кал с буквоовални сълзи, а самотата му носи позлатен дух в призрачни пламъци приклещен. От оголен звук на светулки възземна нощта набъбва цялото  облъчване, сънуващо диамантените хрущяли на ледниковата ера, а Черноногата бърза с хитростта на еднодневка, тъй любовно в кръвта на вече отмитото слънце загледана. Атмосферата съсирва се и чупи полета на счупването едно такова… от гравитацията на тяло, по-голо от собствеността си. ",
+      enText: "Stone mount sinks the nervous fingers of the Unreasonable heartlessly into the corpse of semi-darkness. Its side sobs the melting fire, it endlessly runs away in its gait sparkling snorting. A flaming mirror hides the reflection of the reason clearly, its gaze decorates fiery in hell stinging, but as much as it toils, the fire is not so fierce. The clever costume man sighs overheated in the archetype of his own form, his optimal light faithlessly brings down the spaceflux in the crystal lattice of the melting eruption. The dimensions reverse themselves and the wax flows vertically from the bottom of the mirror glass, as if the secret of observation the wake over the thin layer of illusory love a gloomy dashing cuts. The fiery gaze rounds and unfolds the secrets in the ashes on the sun, and the sky slumbers in the metal of its twilight. The costume man flies like a moth to a dusty past. He wails long like a breathless primrose in night mud with letter-oval tears, and his solitude bears a gilded spirit pinned in ghostly flames. From the naked sound of fireflies, the terrestrial night swells all the radiation, dreamily the diamond cartilages of the ice age, and the Blackfoot rushes with the cunning of a daylily, so lovingly in the blood of the already washed sun gazed. The atmosphere is curdling and broke the field of breakage one such… from the gravity of a body more naked than its property."
     },
     {
       key: "17",
@@ -255,10 +256,10 @@ const PAINTINGS = [
       technique: "акрил, смесена техника",
       enTechnique: "acrylic, mixed media",
       sold: false,
-      heading: "",
-      enHeading: "",
-      text: "",
-      enText: ""
+      heading: "Птичи страх",
+      enHeading: "Birdfear",
+      text: "Слепотата ти ще срина. Ще въдворя ред в гените на хаоса. Мъртвото прииждане на автономни атомни богове остро ще изпия. Ще изсмуча емоцията от болните желания. Ще притъпя пристъпите на гняв със задушаващата целувката на отрицанието и унищожението на любовта тихо ще съборя. Шумът на птиците в утринния поглед вля се, и в мигновен полет разпадна ме.",
+      enText: "I will destroy your blindness. I will bring order to the genes of chaos. I will sharply drink the dead coming of autonomous atomic gods. I will suck the emotion out of the sick desires. I will blunt the tantrums with the suffocating kiss of denial. And I will quietly overthrow the destruction of love. The sound of birds flowed in the morning view and in a flash flight, it disintegrated me."
     },
     {
       key: "18",
@@ -270,10 +271,10 @@ const PAINTINGS = [
       technique: "акрил, смесена техника",
       enTechnique: "acrylic, mixed media",
       sold: true,
-      heading: "",
-      enHeading: "",
-      text: "",
-      enText: ""
+      heading: "Пухкавини",
+      enHeading: "Fluffiness",
+      text: "Чувството предъвква компаса на безконечното време, докато чучулигата спи във  ветровитата прегръдка на кухината. Немирно мълчание обгражда гласовете на времето и прошепва за контрола на мечтата, загнездена в тайна атмосфера. Земята се издига в полет и отваря бездната на тишината като спокоен сън. Остават единствено пухкавите спомени на бъдещето.",
+      enText: "The feeling chews the compass of the endless time as the lark sleeps in the windy embrace of the void. A tense silence surrounds the voices of time and whispers about the dream control nestled in a secret atmosphere. The earth rises in flight and frees the abyss of silence like a peaceful sleep. Only the fluffy memories of the future remain."
     },
     {
       key: "19",
@@ -285,10 +286,10 @@ const PAINTINGS = [
       technique: "акрил, смесена техника",
       enTechnique: "acrylic, mixed media",
       sold: false,
-      heading: "",
-      enHeading: "",
-      text: "",
-      enText: ""
+      heading: "Целувката на Хор",
+      enHeading: "The Kiss of Horus",
+      text: "Очите на реалността глождят кокалите седемдневно и тревожно. Скелетът им замръзва в небиологична структура, затова че съхранил си одраскани писъци на нервни мумии с гневен околоочен контур. Омотаваш разлагането си като фараон на изгубено звездно царство, докато мъртвите синове на подутото от злато пясъчно слънце не залеят междузвездното скръбно пространство със своите мрачни и прелитащи премигвания. Тук е очакване. Тук е немирно витание. Тук на своето пристанище уплахата е изход от сиропиталището на един незнаен бог. Там страхът потъва, изгубва се в целувката на Хор и проглеждаш невидимо.",
+      enText: "The eyes of existence crunch the bones sevendaylly and gingerly. Their skeleton freezes into a non-biological structure, thus preserving the scratchy screams of nervous mummies with a edgy eye contour. You wrap your decay like a pharaoh of a lost star kingdom, until the dead sons of the gold-swollen sandy sun flood the interstellar plaintive space with their somber and fleeting flashes. Here, it is an expectation. Here, it is a unrestful life. Here, at its port, fear is a way out of the orphanage of an unknown god. Where the horror descends, there is the lost kiss of Horus, so you ultimately see the unseen."
     },
     {
       key: "20",
@@ -300,10 +301,10 @@ const PAINTINGS = [
       technique: "акрил, смесена техника",
       enTechnique: "acrylic, mixed media",
       sold: false,
-      heading: "",
-      enHeading: "",
-      text: "",
-      enText: ""
+      heading: "Жадно чуващо око",
+      enHeading: "Thirsty Hearing Eye",
+      text: "Небосводът от слънчевото изригване съзира неочаквано докосване. Утринният поглед червенее. Cпуканите лъчи словото оголват. То боязливо в засмуканата от устни светлина упоено заспива, без ококорено да бди. Сияние в свят на предизвестени мъглявини вкопчва се и в първичен зов на небесни възгледи впримчва се премерено. Смразяващ водопад дълбоко удря виолетова зеница, тя бързо свива се, още по-обозримо замръзва и ледено-слънчево разперена в горящ сълзен сблъсък избухва студена и режеща. Отронените пепеляви звуци на вечерта облизват просмуканата тъмнина в прегръдка доближена. Нещо някъде, завинаги и никога прошепва: Кой намръщи вятъра в ушите? Кой потули жаждата небесна? Мръсните води като отровните вени на Смъртта вцепенено в очите спускат се, молекулните си огорчения съхнат: под душа, под облаците, под самото си обливане.",
+      enText: "The solar-flare sky sees an unpredictable touch. The morning gaze is turning red. The cracked rays undress the word. It falls asleep restlessly and sedated in the light absorbed by the lips, without wide-eyed vigil. A glow clings in a world of foreboding nebulae, and in a primal call of heavenly views, it is measuredly imprisoned. A chilling waterfall deeply hits a violet pupil. It quickly shrinks, pierced even more visibly, and bursts out ice-sunny spread in a burning tearful collision - cold and cutting. The drenched ashen sounds of the evening lick the soaked darkness in a close embrace. Something somewhere, forever and never whispers: Who frowned the wind in the ears? Who quenched the heavenly thirst? The dirty waters, like the poisonous veins of Death, descend numbly in the eyes; their molecular bitterness dries up: under the shower, under the clouds, under its own dousing."
     },
     {
       key: "21",
@@ -442,16 +443,20 @@ const PAINTINGS = [
     },
   ];
 
-export default function Paintings() {
+export default function Paintings(props) {
+  console.log(props.paintings)
     const languageCtx = useContext(LanguageContext);
-
+    const splitted = props.paintings[0].content.split('enText:');
+    const enText = splitted[1];
+    const text = splitted[0];
+    console.log(splitted)
     const bulgarian = languageCtx.version;
 
     return (
         <section className={classes.background}>
             <section className={classes.overlay}>
             <section className="container">
-                {PAINTINGS.map(p => {
+                {props.paintings.map(p => {
                     return (
                         <PaintingWithModal
                             key={p.key}
@@ -466,8 +471,8 @@ export default function Paintings() {
                             dimensions={p.dimensions}
                             heading={p.heading}
                             enHeading={p.enHeading}
-                            text={p.text}
-                            enText={p.enText}
+                            text={text}
+                            enText={enText}
                             sold={p.sold}
                             bulgarian={bulgarian}
                         />
@@ -475,7 +480,16 @@ export default function Paintings() {
                 })}
             </section>
             </section>
-            
         </section>
     )
+}
+
+export function getStaticProps() {
+  const paintings = getAllPaintings();
+
+  return {
+    props: {
+      paintings
+    }
+  }
 }
