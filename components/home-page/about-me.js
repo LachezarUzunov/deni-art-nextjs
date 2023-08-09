@@ -17,23 +17,23 @@ const AboutMe = ({ bulgarian }) => {
         <section className={classes.info}>
           <article className={classes.display}>
             {bulgarian ?
-              <h4>О, вий, които имате очи печални, с безкрая синкав на морето ги хранете</h4>
+              <h4>{`О, вий, които имате очи печални, с безкрая синкав на морето ги хранете`}</h4>
             :
-              <h4 className={classes.henni}>Oh ye! who have your eye-balls vex'd and tir'd, Feast them upon the wideness of the Sea</h4>
+              <h4 className={classes.henni}>{`Oh ye! who have your eye-balls vex'd and tir'd, Feast them upon the wideness of the Sea`}</h4>
             }
            
           </article>
           <article>
             { bulgarian ? 
-              <p className={`shadow`}>Родена съм през ноември 1989г., един мил скорпион. 😉</p>
+              <p className={`shadow`}>{`Родена съм през ноември 1989г., един мил скорпион. 😉`}</p>
             :
-              <p className={`${classes.henni} shadow`}>I was born November , 1989., a kind scorpio. 😉</p>
+              <p className={`${classes.henni} shadow`}>{`I was born November , 1989., a kind scorpio. 😉`}</p>
             }
 
             { bulgarian ? 
-              <p className={`shadow`}>През 2008 г. завърших ЕГ ,,Иван Вазов‘‘ гр. Смолян с немски  и английски език. Същата година продължих образованието си в СУ ,,Св. Климент Охридски‘‘ , специалност Немска филология, а впоследствие записах магистратура ,,Философия на съзнанието на езика‘‘. През 2022 г. се дипломирах в магистърската програма на НБУ ,,Криминология и политики за превенция на престъпността.‘‘</p>
+              <p className={`shadow`}>{`През 2008 г. завърших ЕГ ,,Иван Вазов‘‘ гр. Смолян с немски  и английски език. Същата година продължих образованието си в СУ ,,Св. Климент Охридски‘‘ , специалност Немска филология, а впоследствие записах магистратура ,,Философия на съзнанието на езика‘‘. През 2022 г. се дипломирах в магистърската програма на НБУ ,,Криминология и политики за превенция на престъпността.‘‘`}</p>
             :
-              <p className={`${classes.henni} shadow`}>In 2008, I graduated from Language School "Ivan Vazov" in Smolyan with German and English. The same year, I continued my education at Sofia University "St. Kliment Ohridski", majoring in German philology. I subsequently enrolled in a Master's degree in "Philosophy of Mind and Language". In 2022, I graduated from the Master's program of the NBU, "Criminology and Crime Prevention Policies."</p>
+              <p className={`${classes.henni} shadow`}>{`In 2008, I graduated from Language School "Ivan Vazov" in Smolyan with German and English. The same year, I continued my education at Sofia University "St. Kliment Ohridski", majoring in German philology. I subsequently enrolled in a Master's degree in "Philosophy of Mind and Language". In 2022, I graduated from the Master's program of the NBU, "Criminology and Crime Prevention Policies."`}</p>
             }
            
             { bulgarian ? 
