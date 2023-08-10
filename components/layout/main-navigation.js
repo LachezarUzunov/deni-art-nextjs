@@ -155,7 +155,7 @@ const MainNavigation = ({ bulgarianVersion }) => {
               name="home"
               className={`${classes.link} ${
                 active === "home" ? classes.active : ""
-              }`}
+              } typewriter`}
               href="/"
             >
               Home
@@ -166,7 +166,7 @@ const MainNavigation = ({ bulgarianVersion }) => {
               name="painting"
               className={`${classes.link} ${
                 active === "painting" ? classes.active : ""
-              }`}
+              } typewriter`}
               href="/paintings"
             >
               Paintings
@@ -177,7 +177,7 @@ const MainNavigation = ({ bulgarianVersion }) => {
               name="drawing"
               className={`${classes.link} ${
                 active === "drawing" ? classes.active : ""
-              }`}
+              } typewriter`}
               href="/drawings"
             >
               Drawings
@@ -188,7 +188,7 @@ const MainNavigation = ({ bulgarianVersion }) => {
               name="contact"
               className={`${classes.link} ${
                 active === "contact" ? classes.active : ""
-              }`}
+              } typewriter`}
               href="/contact-me"
             >
               Contact Me
