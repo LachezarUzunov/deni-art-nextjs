@@ -9,8 +9,13 @@ export default function Painting({ src, alt, name, enName, technique, enTechniqu
         setShowImgOverlay(false)
     }
    
-    const splittedBg = text.split('\n');
-    const splittedEn = enText.split('\n')
+    let splittedBg;
+    let splittedEn;
+
+    if (text && enText) {
+        splittedBg = text.split('\n');
+        splittedEn = enText.split('\n')
+    }
 
     return (
 
@@ -29,14 +34,16 @@ export default function Painting({ src, alt, name, enName, technique, enTechniqu
                 <p>{ bulgarian ? `Техника на рисуване - ${technique}` : `Drawing technique - ${enTechnique}`}</p>
                 <p>{ bulgarian ? `Размери в сантиметри - ${dimensions}` : `Dimensions in sentimeters - ${dimensions}`}</p>
                 {heading && <h3>{ bulgarian ? `${heading}` : `${enHeading}`}</h3>}
-                {text && bulgarian ? 
+                {splittedBg && bulgarian ? 
                     <div className={classes.text}>
                         {splittedBg.map((para, index) => (<p key={index}>{para}</p>))}
                     </div>
-                : 
+                : splittedEn ? 
                     <div className={classes.text}>
                         {splittedEn.map((para, index) => (<p key={index}>{para}</p>))}
                     </div>
+                : 
+                    null
                 }
             </div>  
         </div>

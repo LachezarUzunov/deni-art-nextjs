@@ -11,44 +11,8 @@ sold: false
 heading: "Аборт"
 enHeading: "Abortion"
 ---
-Тъмноогненено 
-раждат природните родилни домове 
-празни катафалки -
-                           пещерни гробища на самотата, 
-в които черното и червеното, 
-(крайно отрицателни качества),
-неголяма част от земната повърхност,
-са просто безвъзвратни съчувствия по блян 
-повити в плача на световното бебе - 
-                                                      унило зло като перпендикулярна ос вглъбен живот.
-
-Угнетената демонична глава на съвестта се подава от алчния търбух на завистта
-                                                                         като гол, бездомен нерв- 
-                                                                         като тегобно тегло от грях,
-                                                                         като вътрешността на нищото,
-                                                                         като огнена октава, свита в благослов,
-                                                                         като гробът на Амин.
-
-Слънцето смъртта в орбитата си повива и започва да мълчи с изхлузени очи.enText:Like Darkened fire 
-The natural maternity homes give birth to
-hollow coffins -
-                            cave cemeteries of solitude,
-in which the black and the red,
-(extremely negative qualities),
-a small part of the earth's surface,
-are frankly unrequited sympathies in a dream
-wrapped in the howl of the world's baby -
-                                          disheartened evil as a perpendicular axis of buried life.
-
-
-                                                              
-The abused demonic head of conscience is thrusting out of the greedy envy belly 
-                                                        like a naked, homeless nerve -
-                                                        like a heavy weight of sin,
-                                                        like the inside of nowhere
-                                                        like a fiery octave curled in a  blessing,
-                                                                          like Amen's tomb.
-
-The sun of death twists in its own orbit and begins to be closed-up with drooping eyes.  
-
-How would you do it?
+Между пелените и първообраза Младостта трудно се отмива. В пояса й са потънали ветрове, в неотменната и съвършена песен на новородените -  никаква утеха, но как спокойно цъфтят кухите й очи в люспестите пети на вечността и белее облак тлъст, отлъчен от бялото и изтънял.
+   Една капка кръв и атомите носят коварна нежност, поднесена на луди сблъсъци. Съвършенството завързало любовния плод със сбръчканата и изсмукана кухина на ласка, запокитило го извън ембриона, където някога било като вълна от сянка с лъскави хриле. Толкова малко плът имало, че видяло как по-навътре слънцето черноокия ужас обрулило, съвместило го с лице, леко като разкървавена капсула  на небесно, безволно подгизнало закрепена.
+   Отпускали се откосите сълзи, просторно заспали, измамно вплетени. Или това бил дяволът само със захапаната си усмивка на грохот бездомно кух?enText:Between the diapers and the prototype, Youth is hard to wash away. Winds have sunk into its belt, in the indelible and pure song of the new-born - no comfort at all, but how calmly the hollow eyes are blooming in the scaly heels of eternity, and fat cloud pales whited and thinned.
+   A falling blood drop and the atoms begin to carry a shifty tenderness served up to inflamed clashes. The perfection that bound the love egg to the dusty and sucked cavity of a weasel swept it out of the embryo, where it had once been like a shadow wave of shiny gills. There was so little flesh that it saw how further inward the sun enveloped the black-eyed horror, combined it with a face, light as a bleeding capsule of heaven, willy-nilly drenched and fixed.
+   The poor tears fell, spaciously asleep, deceptively intertwined. Or was it just the devil with his biting smile like a rumbling homeless hollow?
