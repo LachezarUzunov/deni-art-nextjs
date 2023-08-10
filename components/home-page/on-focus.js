@@ -69,11 +69,11 @@ const OnFocus = ({ bulgarian }) => {
           
           <div className={classes.centered}>
             { bulgarian ?
-              <Link className={`btn__primary ${classes.btn}`} href="/za-men">
+              <Link className={`btn__primary ${classes.btn}`} href="/contact-me">
               Окачи я в своя дом {' '} <BsArrowRight />
               </Link>
             :
-              <Link className={`btn__primary typewriter ${classes.btn}`} href="/za-men">
+              <Link className={`btn__primary typewriter ${classes.btn}`} href="/contact-me">
               Hang it in your home {' '} <BsArrowRight />
               </Link>
             }

@@ -7,6 +7,10 @@
   justify-content: center;
 }
 
+.form_div {
+  padding-top: 4rem;
+}
+
 .form {
   display: flex;
   flex-direction: column;

@@ -30,17 +30,34 @@ export default function Painting({ src, alt, name, enName, technique, enTechniqu
                 <Image src={src} alt={alt} width={`${Math.floor(width * 0.9)}`} height={`${Math.floor(height * 0.9)}`}/>
             </div>
             <div>
-                <h2 className={classes.title}>{ bulgarian ? `${name}` : `${enName}`}</h2>
-                <p>{ bulgarian ? `Техника на рисуване - ${technique}` : `Drawing technique - ${enTechnique}`}</p>
-                <p>{ bulgarian ? `Размери в сантиметри - ${dimensions}` : `Dimensions in sentimeters - ${dimensions}`}</p>
-                {heading && <h3>{ bulgarian ? `${heading}` : `${enHeading}`}</h3>}
+                { bulgarian ?
+                    <h2 className={classes.title}>{name}</h2>
+                :
+                    <h2 className={`${classes.title} henni`}>{enName}</h2>
+                }
+                { bulgarian ?
+                    <p>Техника на рисуване - {technique}</p>
+                :
+                    <p className='typewriter'>Drawing technique - {enTechnique}</p>
+                }
+                { bulgarian ?
+                    <p>Размери в сантиметри - {dimensions}</p>
+                :
+                    <p className='typewriter'>Dimensions in sentimeters - {dimensions}</p>
+                }
+                { bulgarian ?
+                    <h3>{heading}</h3>
+                :
+                    <h3 className='henni'>{enHeading}</h3>
+                }
+            
                 {splittedBg && bulgarian ? 
                     <div className={classes.text}>
                         {splittedBg.map((para, index) => (<p key={index}>{para}</p>))}
                     </div>
                 : splittedEn ? 
                     <div className={classes.text}>
-                        {splittedEn.map((para, index) => (<p key={index}>{para}</p>))}
+                        {splittedEn.map((para, index) => (<p className='typewriter' key={index}>{para}</p>))}
                     </div>
                 : 
                     null

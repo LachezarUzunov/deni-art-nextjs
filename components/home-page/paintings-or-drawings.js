@@ -33,20 +33,42 @@ const PaintingsOrDrawings = ({ bulgarian }) => {
         onMouseLeave={mouseLeftLeaveHandler}
         className={`${classes.left} ${classes.split}`}
       >
-        <h1 className={classes.title}>{ bulgarian ? 'Картини' : 'Paintings'}</h1>
-        <Link className={classes.btn} href="/paintings">
-          { bulgarian ? 'Разгледай' : 'Take a look'}
-        </Link>
+        { bulgarian ?
+          <h1 className={classes.title}>Картини</h1>
+        :
+          <h1 className={`${classes.title} henni`}>Paintings</h1>
+        }
+
+        { bulgarian ?
+          <Link className={classes.btn} href="/paintings">
+            Разгледай
+          </Link>
+        :
+          <Link className={`${classes.btn} typewriter`} href="/paintings">
+            Take a look
+          </Link>
+        }
         </article>
         <article
         onMouseEnter={mouseRightEnterHandler}
         onMouseLeave={mouseRightLeaveHandler}
         className={`${classes.right} ${classes.split}`}
       >
-        <h1 className={classes.title}>{ bulgarian ? 'Рисунки' : 'Drawings'}</h1>
-        <Link className={classes.btn} href="/drawings">
-          { bulgarian ? 'Разгледай' : 'Take a look'}
-        </Link>
+        { bulgarian ?
+          <h1 className={classes.title}>Рисунки</h1>
+        :
+          <h1 className={`${classes.title} henni`}>Drawings</h1>
+        }
+
+        { bulgarian ?
+          <Link className={classes.btn} href="/drawings">
+            Разгледай
+          </Link>
+        :
+          <Link className={`${classes.btn} typewriter`} href="/paintings">
+            Take a look
+          </Link>
+        }
         </article>
       </section>
   );

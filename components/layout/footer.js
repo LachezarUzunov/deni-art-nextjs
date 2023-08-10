@@ -9,7 +9,7 @@ import LanguageContext from "@/store/language";
 const Footer = () => {
   const languageCtx = useContext(LanguageContext);
 
-  const langVersion = languageCtx.version;
+  const bulgarian = languageCtx.version;
 
   return (
     <section className={classes.bg}>
@@ -17,24 +17,48 @@ const Footer = () => {
         <div className={classes.nav}>
           <ul className={classes.nav__links}>
             <li>
-              <Link className={classes.lis} href="/">
-                {langVersion ? 'НАЧАЛО' : 'HOME'}
-              </Link>
+              { bulgarian ?
+                <Link className={classes.lis} href="/">
+                  НАЧАЛО
+                </Link> 
+              :
+                <Link className={`${classes.lis} typewriter`} href="/">
+                  HOME
+                </Link>
+              }
             </li>
             <li>
-              <Link className={classes.lis} href="/paintings">
-                { langVersion ? 'КАРТИНИ' : 'PAINTINGS'}
-              </Link>
+              { bulgarian ?
+                <Link className={classes.lis} href="/paintings">
+                  КАРТИНИ
+                </Link> 
+              :
+                <Link className={`${classes.lis} typewriter`} href="/paintings">
+                  PAINTINGS
+                </Link>
+              }
             </li>
             <li>
-              <Link className={classes.lis} href="/drawings">
-                { langVersion ? 'РИСУНКИ' : 'DRAWINGS'}
-              </Link>
+              { bulgarian ?
+                <Link className={classes.lis} href="/drawings">
+                  РИСУНКИ
+                </Link> 
+              :
+                <Link className={`${classes.lis} typewriter`} href="/drawings">
+                  DRAWINGS
+                </Link>
+              }
             </li>
             <li>
-              <Link className={classes.lis} href="/contact-me">
-                { langVersion ? 'КОНТАКТИ' : 'CONTACTS'}
-              </Link>
+              { bulgarian ?
+                <Link className={classes.lis} href="/contact-me">
+                  КОНТАКТИ
+                </Link> 
+              :
+                <Link className={`${classes.lis} typewriter`} href="/contact-me">
+                  CONTACTS
+                </Link>
+              }
             </li>
           </ul>
           <ul className={classes.nav__links}>
