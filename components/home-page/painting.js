@@ -18,16 +18,45 @@ const Painting = ({ src, name, enName, alt, technique, enTechnique, width, heigh
         <Image className={`${classes.image} ${classes.display_m}`} src={src} alt={alt} width={`${Math.floor(width / 1.3)}`} height={`${Math.floor(height / 1.3)}`} />
       </div>
       <article className={classes.painting__info}>
-        <h3 className={classes.image_title}>{ bulgarian ? `${name}` : `${enName}`}</h3>
-        <p className={classes.fragment}>{ bulgarian ? `Размери в сантиметри - ${dimensions}` : `Dimensions in sentimeters - ${dimensions}`}</p>
-        <p className={classes.fragment}>{ bulgarian ? `Техника на рисуване - ${technique}` : `Drawing technique - ${enTechnique}`}</p>
-        <h2 className={classes.title}>{ bulgarian ? `${title}` : `${enTitle}`}</h2>
-        <p className={classes.fragment}>{ bulgarian ? `${text}` : `${enText}`}</p>
+        { bulgarian ?
+          <h3 className={classes.image_title}>{name}</h3>
+        :
+          <h3 className={`${classes.image_title} henni`}>{enName}</h3>
+        }
+        { bulgarian ?
+          <p className={classes.fragment}>Размери в сантиметри - {dimensions}</p>
+        :
+          <p className={`${classes.fragment} typewriter`}>Dimensions in sentimeters - {dimensions}</p>
+        }
+        { bulgarian ?
+          <p className={classes.fragment}>Техника на рисуване - {technique}</p>
+        :
+          <p className={`${classes.fragment} typewriter`}>Drawing technique - {enTechnique}</p>
+        }
+        { bulgarian ?
+          <h2 className={classes.title}>{title}</h2>
+        :
+          <h2 className={`${classes.title} henni`}>{enTitle}</h2>
+        }
+        { bulgarian ?
+          <p className={classes.fragment}>{text}</p>
+        :
+          <p className={`${classes.fragment} typewriter`}>{enText}</p>
+        }
+        
         <div className={classes.centered}>
-        <Link className={`btn__primary ${classes.btn}`} href="/contact-me">
-          { bulgarian ? 'Окачи я в своя дом' : 'Hang it in your home'}
-          <BsArrowRight />
-        </Link>
+        { bulgarian ?
+          <Link className={`btn__primary ${classes.btn}`} href="/contact-me">
+            Окачи я в своя дом
+            <BsArrowRight />
+          </Link>
+        :
+          <Link className={`btn__primary ${classes.btn} typewriter`} href="/contact-me">
+            Hang it in your home
+            <BsArrowRight />
+          </Link>
+        }
+        
         </div>
       </article>
     </section>
