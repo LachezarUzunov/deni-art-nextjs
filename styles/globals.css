@@ -1,5 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Comfortaa:wght@300;400;500;600;700&family=Gabriela&family=Kurale&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Rubik+Wet+Paint&family=Sofia+Sans+Condensed:ital,wght@0,1;0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,1;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Vollkorn+SC:wght@400;600;700;900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kurale&family=Pangolin&family=Reggae+One&family=Rubik+Dirt&family=Rubik+Wet+Paint&family=Ruslan+Display&family=Shantell+Sans:wght@300&family=Underdog&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&family=Rubik+Beastly&family=Rubik+Distressed&family=Rubik+Gemstones&family=Rubik+Marker+Hatch&family=Rubik+Maze&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Kurale&display=swap');
+
+@font-face {
+  font-family: 'gothic';
+  src: local('gothic'),
+  url('../public/fonts/1001-font.ttf');
+}
+
+@font-face {
+  font-family: 'second';
+  src: local('second'),
+  url('../public/fonts/16-font.otf');
+}
+
+@font-face {
+  font-family: 'third';
+  src: local('third'),
+  url('../public/fonts/deutsch-gothic_[bg.allfont.net].ttf');
+}
+
+
 /* 
     font-family: 'Caveat', cursive;
     font-family: 'Comfortaa', cursive;
@@ -10,6 +33,35 @@
     font-family: 'Rubik Wet Paint', cursive;
     font-family: 'Sofia Sans Condensed', sans-serif;
     font-family: 'Vollkorn SC', serif;
+
+
+    font-family: 'Kurale', serif;
+
+    font-family: 'Pangolin', cursive;
+
+    font-family: 'Reggae One', cursive;
+
+    font-family: 'Rubik Dirt', cursive;
+
+    font-family: 'Rubik Wet Paint', cursive;
+
+    font-family: 'Ruslan Display', cursive;
+
+    font-family: 'Shantell Sans', cursive;
+
+    font-family: 'Underdog', cursive;
+
+        font-family: 'Kablammo', cursive;
+
+
+    font-family: 'Rubik Distressed', cursive;
+
+    font-family: 'Rubik Gemstones', cursive;
+
+    font-family: 'Rubik Maze', cursive;
+
+    font-family: 'Alice', serif;
+font-family: 'Kurale', serif;
  */
 
 :root {
@@ -186,6 +238,16 @@ textarea:focus {
   font-family: 'Special Elite', cursive;
   letter-spacing: 0.2rem;
   font-size: 1.6rem;
+}
+
+.bgTitle {
+  font-family: 'gothic';
+}
+
+.bgFont {
+  letter-spacing: .3rem;
+  font-size: 1.6rem;
+  font-family: 'Underdog', cursive;
 }
 
 .shadow {

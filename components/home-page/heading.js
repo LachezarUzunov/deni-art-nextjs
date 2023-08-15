@@ -9,12 +9,12 @@ const Heading = ({ bulgarian }) => {
       <article className={`container ${classes.hero_section}`}>
       <div className={classes.hero__info}>
         { bulgarian ? 
-          <h1 className={`${classes.hero__heading}`}>Деница Кръстанова</h1>
+          <h1 className={`${classes.hero__heading} ${classes.title}`}>Деница Кръстанова</h1>
         :
           <h1 className={`${classes.hero__heading} ${classes.henni}`}>Denitza Krastanova</h1>
         }
         { bulgarian ?
-          <h3>Творец и изследовател на човешката душа</h3>
+          <h3 className={`${classes.subTitle}`}>Творец и изследовател на човешката душа</h3>
         :
           <h3 className={`${classes.typewritter}`}>Creator and explorer of the human soul</h3>
         }

@@ -11,7 +11,7 @@ const ContactForm = () => {
     <section className={classes.form__section}>
       <div className={classes.form_div}>
         { bulgarian ?
-          <h2 className={classes.header}>КОНТАКТИ</h2>
+          <h2 className={`${classes.header} bgFont`}>КОНТАКТИ</h2>
         :
           <h2 className={`${classes.header} typewriter`}>CONTACTS</h2>
         }
@@ -45,7 +45,7 @@ const ContactForm = () => {
           <textarea required id="question"></textarea>
           <div className={classes.centered_btn}>
             {bulgarian ?
-              <button className="btn__primary">Изпрати</button>
+              <button className="btn__primary bgFont">Изпрати</button>
             :
               <button className="btn__primary typewriter">Send</button>
             }

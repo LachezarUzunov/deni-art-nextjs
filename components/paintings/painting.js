@@ -36,12 +36,12 @@ export default function Painting({ src, alt, name, enName, technique, enTechniqu
                     <h2 className={`${classes.title} henni`}>{enName}</h2>
                 }
                 { bulgarian ?
-                    <p>Техника на рисуване - {technique}</p>
+                    <p className='bgFont'>Техника на рисуване - {technique}</p>
                 :
                     <p className='typewriter'>Drawing technique - {enTechnique}</p>
                 }
                 { bulgarian ?
-                    <p>Размери в сантиметри - {dimensions}</p>
+                    <p className='bgFont'>Размери в сантиметри - {dimensions}</p>
                 :
                     <p className='typewriter'>Dimensions in sentimeters - {dimensions}</p>
                 }
@@ -52,8 +52,8 @@ export default function Painting({ src, alt, name, enName, technique, enTechniqu
                 }
             
                 {splittedBg && bulgarian ? 
-                    <div className={classes.text}>
-                        {splittedBg.map((para, index) => (<p key={index}>{para}</p>))}
+                    <div className={`${classes.text}`}>
+                        {splittedBg.map((para, index) => (<p className='bgFont' key={index}>{para}</p>))}
                     </div>
                 : splittedEn ? 
                     <div className={classes.text}>

@@ -41,24 +41,24 @@ const OnFocus = ({ bulgarian }) => {
       
         <article className={classes.onfocus__info}>
           { bulgarian ?
-            <h2 className={classes.desktop}>На фокус</h2>
+            <h2 className={`${classes.desktop} bgFont ${classes.title}`}>На фокус</h2>
           :
             <h2 className={`${classes.desktop} henni`}>On focus</h2>
           }
           { bulgarian ? 
-            <h3 className={classes.desktop}>Басмая</h3>
+            <h3 className={`${classes.desktop} ${classes.bgTitle}`}>Басмая</h3>
           :
             <h3 className={`${classes.desktop} henni`}>Basmaya</h3>
           }
           
           { bulgarian ?
-            <p>Размери в сантиметри - 60 х 40</p>
+            <p className={`bgFont`}>Размери в сантиметри - 60 х 40</p>
           :
             <p className="typewriter">Dimensions in santimeters - 60 x 40</p>
           }
           
           { bulgarian ?
-            <p>
+            <p className={`bgFont`}>
               Звездите от безбройните блестящи черепни кухини изсипват се. Небето със своите черепи,  наместо звезди, злокобно набъбва. Гласовете им в моя вселяват се. В очната кухина на гигантския череп потъвам. Попадам в съня ти. Виждам несъответствието на любовта като интензивен оголен пулс. Влизам в миналите, настоящите и бъдещите ти тела – (в) безкрайността на затвора. Сълзата ми отключва тайната на Смъртта. Аз съм отвъд Бог единствено като човек. Ти си отвъд Бог единствено като мен.
             </p>
           :
@@ -69,7 +69,7 @@ const OnFocus = ({ bulgarian }) => {
           
           <div className={classes.centered}>
             { bulgarian ?
-              <Link className={`btn__primary ${classes.btn}`} href="/contact-me">
+              <Link className={`btn__primary ${classes.btn} bgFont`} href="/contact-me">
               Окачи я в своя дом {' '} <BsArrowRight />
               </Link>
             :

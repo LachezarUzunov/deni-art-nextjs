@@ -18,7 +18,7 @@ const Footer = () => {
           <ul className={classes.nav__links}>
             <li>
               { bulgarian ?
-                <Link className={classes.lis} href="/">
+                <Link className={`${classes.lis} bgFont`} href="/">
                   НАЧАЛО
                 </Link> 
               :
@@ -29,7 +29,7 @@ const Footer = () => {
             </li>
             <li>
               { bulgarian ?
-                <Link className={classes.lis} href="/paintings">
+                <Link className={`${classes.lis} bgFont`} href="/paintings">
                   КАРТИНИ
                 </Link> 
               :
@@ -40,7 +40,7 @@ const Footer = () => {
             </li>
             <li>
               { bulgarian ?
-                <Link className={classes.lis} href="/drawings">
+                <Link className={`${classes.lis} bgFont`} href="/drawings">
                   РИСУНКИ
                 </Link> 
               :
@@ -51,7 +51,7 @@ const Footer = () => {
             </li>
             <li>
               { bulgarian ?
-                <Link className={classes.lis} href="/contact-me">
+                <Link className={`${classes.lis} bgFont`} href="/contact-me">
                   КОНТАКТИ
                 </Link> 
               :

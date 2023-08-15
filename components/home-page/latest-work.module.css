@@ -8,6 +8,24 @@
   padding: 8rem 0;
 }
 
+.title {
+  font-size: 4rem;
+  letter-spacing: .4rem;
+}
+
+.bgTitle {
+  font-family: 'gothic';
+  font-size: 3rem;
+}
+
+.subtitle {
+  font-size: 2rem;
+}
+
+.subTitleBg {
+  font-size: 3rem;
+}
+
 .painting__header {
   display: flex;
   flex-direction: column;

@@ -19,34 +19,34 @@ const Painting = ({ src, name, enName, alt, technique, enTechnique, width, heigh
       </div>
       <article className={classes.painting__info}>
         { bulgarian ?
-          <h3 className={classes.image_title}>{name}</h3>
+          <h3 className={`${classes.image_title} bgTitle`}>{name}</h3>
         :
           <h3 className={`${classes.image_title} henni`}>{enName}</h3>
         }
         { bulgarian ?
-          <p className={classes.fragment}>Размери в сантиметри - {dimensions}</p>
+          <p className={`${classes.fragment} bgFont`}>Размери в сантиметри - {dimensions}</p>
         :
           <p className={`${classes.fragment} typewriter`}>Dimensions in sentimeters - {dimensions}</p>
         }
         { bulgarian ?
-          <p className={classes.fragment}>Техника на рисуване - {technique}</p>
+          <p className={`${classes.fragment} bgFont`}>Техника на рисуване - {technique}</p>
         :
           <p className={`${classes.fragment} typewriter`}>Drawing technique - {enTechnique}</p>
         }
         { bulgarian ?
-          <h2 className={classes.title}>{title}</h2>
+          <h2 className={`${classes.title} bgTitle`}>{title}</h2>
         :
           <h2 className={`${classes.title} henni`}>{enTitle}</h2>
         }
         { bulgarian ?
-          <p className={classes.fragment}>{text}</p>
+          <p className={`${classes.fragment} bgFont`}>{text}</p>
         :
           <p className={`${classes.fragment} typewriter`}>{enText}</p>
         }
         
         <div className={classes.centered}>
         { bulgarian ?
-          <Link className={`btn__primary ${classes.btn}`} href="/contact-me">
+          <Link className={`btn__primary ${classes.btn} bgFont`} href="/contact-me">
             Окачи я в своя дом
             <BsArrowRight />
           </Link>

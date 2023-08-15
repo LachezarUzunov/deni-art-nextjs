@@ -39,6 +39,16 @@
   display: none;
 }
 
+.bgFontTitle {
+  font-family: 'gothic';
+  letter-spacing: .4rem;
+}
+
+.bgTitleAnother {
+  font-family: 'gothic';
+  letter-spacing: .4rem;
+}
+
 
 @media screen and (max-width: 1100px) {
 

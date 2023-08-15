@@ -34,13 +34,13 @@ const PaintingsOrDrawings = ({ bulgarian }) => {
         className={`${classes.left} ${classes.split}`}
       >
         { bulgarian ?
-          <h1 className={classes.title}>Картини</h1>
+          <h1 className={`${classes.title} bgTitle`}>Картини</h1>
         :
           <h1 className={`${classes.title} henni`}>Paintings</h1>
         }
 
         { bulgarian ?
-          <Link className={classes.btn} href="/paintings">
+          <Link className={`${classes.btn} bgFont`} href="/paintings">
             Разгледай
           </Link>
         :
@@ -55,13 +55,13 @@ const PaintingsOrDrawings = ({ bulgarian }) => {
         className={`${classes.right} ${classes.split}`}
       >
         { bulgarian ?
-          <h1 className={classes.title}>Рисунки</h1>
+          <h1 className={`${classes.title} bgTitle`}>Рисунки</h1>
         :
           <h1 className={`${classes.title} henni`}>Drawings</h1>
         }
 
         { bulgarian ?
-          <Link className={classes.btn} href="/drawings">
+          <Link className={`${classes.btn} bgFont`} href="/drawings">
             Разгледай
           </Link>
         :

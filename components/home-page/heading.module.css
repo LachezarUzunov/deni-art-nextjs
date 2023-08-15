@@ -26,6 +26,17 @@
   letter-spacing: 0.2rem;
 }
 
+.title {
+  font-family: 'gothic';
+  letter-spacing: .6rem;
+}
+
+.subTitle {
+  letter-spacing: .3rem;
+  font-size: 3.2rem;
+  font-family: 'Underdog', cursive;
+}
+
 .typewritter {
   font-family: 'Special Elite', cursive;
   letter-spacing: 0.2rem;

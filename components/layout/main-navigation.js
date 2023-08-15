@@ -62,7 +62,7 @@ const MainNavigation = ({ bulgarianVersion }) => {
           <li onClick={onMenuClick}>
             <Link
               name="home"
-              className={`${classes.link} ${
+              className={`bgFont ${classes.link} ${
                 active === "home" ? classes.active : ""
               }`}
               href="/"
@@ -73,7 +73,7 @@ const MainNavigation = ({ bulgarianVersion }) => {
           <li onClick={onMenuClick}>
             <Link
               name="painting"
-              className={`${classes.link} ${
+              className={`bgFont ${classes.link} ${
                 active === "painting" ? classes.active : ""
               }`}
               href="/paintings"
@@ -84,7 +84,7 @@ const MainNavigation = ({ bulgarianVersion }) => {
           <li onClick={onMenuClick}>
             <Link
               name="drawing"
-              className={`${classes.link} ${
+              className={`bgFont ${classes.link} ${
                 active === "drawing" ? classes.active : ""
               }`}
               href="/drawings"
@@ -95,7 +95,7 @@ const MainNavigation = ({ bulgarianVersion }) => {
           <li onClick={onMenuClick}>
             <Link
               name="contact"
-              className={`${classes.link } ${
+              className={`bgFont ${classes.link } ${
                 active === "contact" ? classes.active : ""
               }`}
               href="/contact-me"

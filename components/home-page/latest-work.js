@@ -66,8 +66,17 @@ const LatestWork = ({ bulgarian }) => {
     <section className={classes.background}>
       <section className="container">
         <div className={classes.painting__header}>
-          <h2>{ bulgarian ? 'Последни творби' : 'Latest Works'}</h2>
-          <h3>{ bulgarian ? 'Върху какво работя напоследък' : 'What I am working on lately'}</h3>
+          { bulgarian ?
+            <h2 className={`${classes.bgTitle}`}>Последни творби</h2>
+          :
+            <h2 className={`${classes.title} henni`}>Latest Works</h2>
+          }
+          { bulgarian ?
+            <h3 className={`bgFont ${classes.subTitleBg}`}>Върху какво работя напоследък</h3>
+          :
+            <h3 className={`${classes.subtitle} typewriter`}>What I am working on lately</h3>
+          }
+          
         </div>
         <article className={classes.painting}>
           {PAINTINGS.map((p) => {
