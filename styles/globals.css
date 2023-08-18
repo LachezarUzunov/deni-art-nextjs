@@ -7,32 +7,11 @@
 @font-face {
   font-family: 'gothic';
   src: local('gothic'),
-  url('../public/fonts/1001-font.ttf');
+  url('../public/fonts/gothic.ttf');
 }
-
-@font-face {
-  font-family: 'second';
-  src: local('second'),
-  url('../public/fonts/16-font.otf');
-}
-
-@font-face {
-  font-family: 'third';
-  src: local('third'),
-  url('../public/fonts/deutsch-gothic_[bg.allfont.net].ttf');
-}
-
 
 /* 
-    font-family: 'Caveat', cursive;
-    font-family: 'Comfortaa', cursive;
-    font-family: 'Gabriela', serif;
-    font-family: 'Kurale', serif;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Philosopher', sans-serif;
-    font-family: 'Rubik Wet Paint', cursive;
-    font-family: 'Sofia Sans Condensed', sans-serif;
-    font-family: 'Vollkorn SC', serif;
+
 
 
     font-family: 'Kurale', serif;
@@ -50,18 +29,6 @@
     font-family: 'Shantell Sans', cursive;
 
     font-family: 'Underdog', cursive;
-
-        font-family: 'Kablammo', cursive;
-
-
-    font-family: 'Rubik Distressed', cursive;
-
-    font-family: 'Rubik Gemstones', cursive;
-
-    font-family: 'Rubik Maze', cursive;
-
-    font-family: 'Alice', serif;
-font-family: 'Kurale', serif;
  */
 
 :root {
@@ -108,14 +75,12 @@ main {
 }
 
 h1 {
-  font-family: "Comfortaa", cursive;
   color: var(--gray);
   letter-spacing: 0.4rem;
   font-size: 6rem;
 }
 
 h2 {
-  font-family: "Comfortaa", cursive;
   letter-spacing: 0.2rem;
   font-size: 2rem;
   color: var(--gray);
@@ -123,16 +88,12 @@ h2 {
 }
 
 h3 {
-  font-family: "Caveat", cursive;
-  /* font-family: "Gabriela", serif; */
-  font-family: "Philosopher", sans-serif;
   font-weight: 100;
   color: var(--dark-gray);
   font-size: 4rem;
 }
 
 h4 {
-  font-family: "Caveat", cursive;
   color: var(--gray);
   font-size: 4rem;
 }
@@ -143,7 +104,6 @@ p {
   line-height: 1.6;
   color: var(--gray);
   font-size: 1.4rem;
-  font-family: "Comfortaa", cursive;
 }
 
 li {
@@ -156,13 +116,11 @@ a {
   color: black;
   text-align: center;
   letter-spacing: 2px;
-  font-family: "Philosopher", sans-serif;
 }
 
 label {
   color:  var(--dark-gray);
   font-size: 1.6rem;
-  font-family: "Comfortaa", cursive;
 }
 
 input {
@@ -214,7 +172,6 @@ textarea:focus {
 .btn__primary {
   display: block;
   width: max-content;
-  font-family: "Comfortaa", sans-serif;
   letter-spacing: 0.1rem;
   font-weight: 500;
   font-size: 1.6rem;
