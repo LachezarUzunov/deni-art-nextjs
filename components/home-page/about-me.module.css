@@ -1,9 +1,10 @@
 .background {
-  background-image: url("../../public/site/smoke.jpg");
+  /* background-image: url("../../public/site/smoke_p.webp"); */
+  background-image: url("../../public/site/smoke_opt.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
-  padding-bottom: 4rem;
+  padding-bottom: 8rem;
 }
 
 .info {
@@ -23,6 +24,7 @@
   gap: 2rem;
   align-items: center;
   transition: 300ms ease-in-out;
+  width: max-content;
 }
 
 .btn:hover {

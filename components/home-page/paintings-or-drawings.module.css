@@ -13,7 +13,7 @@
 }
 
 .split.left {
-  background: url("../../public/site/paintings.jpg");
+  background: url("../../public/site/paintings_p.webp");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -28,7 +28,7 @@
 
 .split.right {
   right: 0;
-  background: url("../../public/site/drawings.jpg");
+  background: url("../../public/site/drawings_p.webp");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -103,6 +103,9 @@
   width: var(--other-width);
 }
 
+.mobile_view {
+  display: none;
+}
 @media screen and (max-width: 1300px) {
   .title {
     font-size: 5rem;
@@ -119,6 +122,16 @@
 @media screen and (max-width: 960px) {
   .display_m {
     display: none;
+  }
+  
+  .mobile_view {
+    display: block;
+  }
+
+  .paintingBg {
+    background: url("../../public/site/paintings_p.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 

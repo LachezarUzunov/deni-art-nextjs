@@ -1,10 +1,13 @@
 import { BsArrowRight } from "react-icons/bs";
-
+import { useState, useEffect } from "react";
+import { Blurhash } from "react-blurhash";
 import Image from "next/image";
 import Link from "next/link";
 import classes from "./on-focus.module.css";
+import ImgFrame from "../layout/ImgFrame";
 
 const OnFocus = ({ bulgarian }) => {
+
   return (
     <section className={classes.background}>
       <div className={classes.mobile}>
@@ -20,16 +23,20 @@ const OnFocus = ({ bulgarian }) => {
         }
       </div>
       <section className={`container ${classes.focus__section}`}>
-        <div className={classes.centered}>
+  
+      <div className={classes.centered}>
+        <ImgFrame>
           <Image
-            className={classes.image_onFocus}
+            className={`${classes.image_onFocus}`}
             src="/paintings/Басмая.jpg"
             alt="Басмая"
-            width={600 / (60 / 40)}
-            height={600}
+            width={400 / (60 / 40)}
+            height={400}
           />
-        </div>
-        
+          { bulgarian ? <div className="text">Басмая</div> :
+           <div className="enText">Basmaya</div>}
+        </ImgFrame>
+      </div>
         <div className={`${classes.image_onFocus_m}`}>
           <Image
             src="/paintings/Басмая.jpg"
@@ -69,11 +76,11 @@ const OnFocus = ({ bulgarian }) => {
           
           <div className={classes.centered}>
             { bulgarian ?
-              <Link className={`btn__primary ${classes.btn} bgFont`} href="/contact-me">
+              <Link className={`btn__primary ${classes.btn}`} href="/contact-me">
               Окачи я в своя дом {' '} <BsArrowRight />
               </Link>
             :
-              <Link className={`btn__primary typewriter ${classes.btn}`} href="/contact-me">
+              <Link className={`btn__primary typewriter`} href="/contact-me">
               Hang it in your home {' '} <BsArrowRight />
               </Link>
             }

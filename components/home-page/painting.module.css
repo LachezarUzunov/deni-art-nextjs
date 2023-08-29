@@ -18,7 +18,7 @@
   gap: 2rem;
   align-items: center;
   transition: 300ms ease-in-out;
-  
+  width: max-content;
 }
 
 .btn:hover {

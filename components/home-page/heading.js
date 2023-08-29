@@ -1,10 +1,10 @@
 import Image from "next/image";
-
 import classes from "./heading.module.css";
 
 const Heading = ({ bulgarian }) => {
 
   return (
+
     <section className={classes.hero}>
       <article className={`container ${classes.hero_section}`}>
       <div className={classes.hero__info}>
@@ -14,9 +14,9 @@ const Heading = ({ bulgarian }) => {
           <h1 className={`${classes.hero__heading} ${classes.henni}`}>Denitza Krastanova</h1>
         }
         { bulgarian ?
-          <h3 className={`${classes.subTitle}`}>Творец и изследовател на човешката душа</h3>
+          <h3 className={`${classes.subTitle}`}>"Няма нищо ново освен начинът на подреждане" - Уил Дюрант</h3>
         :
-          <h3 className={`${classes.typewritter}`}>Creator and explorer of the human soul</h3>
+          <h3 className={`${classes.typewritter}`}>'Nothing is new except arrangement' - Will Durant</h3>
         }
         
       </div>
@@ -25,6 +25,7 @@ const Heading = ({ bulgarian }) => {
       <Image className={classes.display_xsm} src="/site/deni.jpg" alt="artist" width={295} height={400} />
       </article>
     </section>
+
   );
 };
 

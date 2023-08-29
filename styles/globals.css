@@ -13,6 +13,42 @@
     font-display: swap;
 }
 
+/* .frame {
+  margin:50px auto;
+  border:25px solid #222;
+  height:475px;
+  width:350px;
+  -webkit-box-shadow:  px 2px 3px 1px rgba(0, 0, 0, .5);
+  box-shadow:  0px 3px 10px 4px rgba(0, 0, 0, .3);
+}
+
+.border {
+  background:white;
+  height:100%;
+  width:100%;
+  -webkit-box-shadow: inset 10px 10px 10px 4px rgba(0, 0, 0, .4);
+  box-shadow: inset 3px 7px 2px 5px rgba(0, 0, 0, .4);
+}
+
+.image {
+  position:absolute;
+  height:350px;
+  width:250px;
+  margin-left:50px;
+  margin-top:50px;
+  -webkit-box-shadow: inset 10px 10px 10px 4px rgba(0, 0, 0, .6);
+  box-shadow: inset 3px 7px 2px 5px rgba(0, 0, 0, .1);
+  border:2px inset #c9c9c9;
+}
+
+.text {
+  position:absolute;
+  margin-top:420px;
+  font-family: 'Playball', cursive;
+  font-size:30px;
+  margin-left:85px;
+} */
+
 /* 
 
 
@@ -172,26 +208,10 @@ textarea:focus {
   cursor: pointer;
 }
 
-.btn__primary {
-  display: block;
-  width: max-content;
-  letter-spacing: 0.1rem;
-  font-weight: 500;
+.bgFont {
+  letter-spacing: .3rem;
   font-size: 1.6rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  padding: 1.2rem 2.6rem;
-  border-radius: 10px;
-  background-color: var(--violet);
-  color: var(--gray);
-  text-transform: uppercase;
-  transition: 0.4s ease-in-out;
-}
-
-.henni {
-  font-family: 'Henny Penny', cursive;
-  line-height: 2;
-  letter-spacing: 0.2rem;
+  font-family: 'Underdog', cursive;
 }
 
 .typewriter {
@@ -200,14 +220,76 @@ textarea:focus {
   font-size: 1.6rem;
 }
 
-.bgTitle {
-  font-family: 'gothic';
+.btn__primary {
+  color: hsl(317 100% 54%);
+  font-size: 2rem;
+  cursor: pointer;
+  display: inline-block;
+  border: 0.125em solid hsl(317 100% 54%);
+  padding: 0.25em 1em;
+  border-radius: 0.25em;
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+  0 0 0.45em hsl(317 100% 54%);
+  box-shadow: inset 0 0 0.5em 0 hsl(317 100% 54%),
+  0 0 0.5em 0 hsl(317 100% 54%);
+  position: relative;
+  transition: background-color 100ms linear;
 }
 
-.bgFont {
-  letter-spacing: .3rem;
-  font-size: 1.6rem;
-  font-family: 'Underdog', cursive;
+.btn__primary::before {
+  pointer-events: none;
+  content: '';
+  position: absolute;
+  background: hsl(317 100% 54%);
+  top: 120%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+  filter: blur(1em);
+  opacity: 0.7;
+}
+
+.btn__primary::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 2em 0.5em hsl(317 100% 54%);
+  opacity: 0;
+  transition: opacity 100ms linear;
+}
+
+.btn__primary:hover,
+.btn__primary:focus {
+  background:hsl(317 100% 54%);
+  color: black;
+  text-shadow: none;
+}
+
+.btn__primary:hover::before,
+.btn__primary:focus::before {
+  opacity: 1;
+}
+
+.btn__primary:hover::after,
+.btn__primary:focus::after {
+  opacity: 1;
+}
+
+
+
+.henni {
+  font-family: 'Henny Penny', cursive;
+  line-height: 2;
+  letter-spacing: 0.2rem;
+}
+
+.bgTitle {
+  font-family: 'gothic';
 }
 
 .shadow {
@@ -255,9 +337,20 @@ textarea:focus {
   }
 }
 
-.btn__primary:hover {
-  cursor: pointer;
-  background-color: var(--deep-purple);
+.text {
+  font-size:30px;
+  margin-top: 20px;
+  text-align: center;
+  font-family: 'gothic';
+  letter-spacing: 1rem;
+}
+
+.enText {
+  font-size:30px;
+  margin-top: 20px;
+  text-align: center;
+  font-family: 'Henny Penny', cursive;
+  letter-spacing: 1rem;
 }
 
 @media screen and (max-width: 1300px) {

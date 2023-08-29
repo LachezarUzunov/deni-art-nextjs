@@ -61,7 +61,7 @@ const PAINTINGS = [
 ];
 
 const LatestWork = ({ bulgarian }) => {
-  
+ 
   return (
     <section className={classes.background}>
       <section className="container">

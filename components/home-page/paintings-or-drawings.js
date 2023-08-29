@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 import Link from "next/link";
 import classes from "./paintings-or-drawings.module.css";
@@ -23,6 +23,7 @@ const PaintingsOrDrawings = ({ bulgarian }) => {
   };
 
   return (
+    <React.Fragment>
       <section
       className={`${classes.display_m} ${classes.card} ${hoveredLeft ? classes.hover__left : null} ${
         hoveredRight ? classes.hover__right : null
@@ -71,6 +72,46 @@ const PaintingsOrDrawings = ({ bulgarian }) => {
         }
         </article>
       </section>
+      <section className={classes.mobile_view}>
+       
+          <article className={`${classes.paintingBg}`}
+        >
+          { bulgarian ?
+            <h1>Картини</h1>
+          :
+            <h1>Paintings</h1>
+          }
+
+          { bulgarian ?
+            <Link href="/paintings">
+              Разгледай
+            </Link>
+          :
+            <Link href="/paintings">
+              Take a look
+            </Link>
+          }
+          </article>
+          <article
+        >
+          { bulgarian ?
+            <h1 >Рисунки</h1>
+          :
+            <h1 >Drawings</h1>
+          }
+
+          { bulgarian ?
+            <Link href="/drawings">
+              Разгледай
+            </Link>
+          :
+            <Link href="/paintings">
+              Take a look
+            </Link>
+          }
+          </article>
+      </section>
+    </React.Fragment>
   );
 };
 
