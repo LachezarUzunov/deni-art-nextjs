@@ -58,9 +58,9 @@ const AboutMe = ({ bulgarian }) => {
             }
 
             { bulgarian ? 
-              <p className="bgFont shadow">През 2008 г. завърших ЕГ ,,Иван Вазов‘‘ гр. Смолян с немски език. Същата година продължих образованието си в СУ ,,Св. Климент Охридски‘‘ , специалност Немска филология, а впоследствие записах магистратура ,,Философия на съзнанието на езика‘‘. През 2022г. се дипломирах в магистърската програма на НБУ ,,Криминология и политики за превенция на престъпността.‘‘</p>
+              <p className="bgFont shadow">През 2008 г. завърших ЕГ &quot;Иван Вазов&quot; гр. Смолян с немски език. Същата година продължих образованието си в СУ &quot;Св. Климент Охридски&quot;, специалност Немска филология, а впоследствие записах магистратура &quot;Философия на съзнанието на езика&quot;. През 2022г. се дипломирах в магистърската програма на НБУ &quot;Криминология и политики за превенция на престъпността&quot;.</p>
             :
-              <p className="typewriter shadow">In 2008, I graduated from Language School "Ivan Vazov" in Smolyan with German language. The same year, I continued my education at the University of ’’St. Kliment Ohridski'', majoring in German philology, and subsequently enrolled in a master's degree "Philosophy of Mind and Language". In 2022, I graduated from the Master's program of the NBU, "Criminology and Crime Prevention Policies".</p>
+              <p className="typewriter shadow">In 2008, I graduated from Language School &quot;Ivan Vazov&quot; in Smolyan with German language. The same year, I continued my education at the University of &quot;St. Kliment Ohridski&quot;, majoring in German philology, and subsequently enrolled in a master&apos;s degree &quot;Philosophy of Mind and Language&quot;. In 2022, I graduated from the Master&apos;s program of the NBU, &quot;Criminology and Crime Prevention Policies&quot;.</p>
             }
        
             <p className="shadow">

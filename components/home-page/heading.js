@@ -14,9 +14,9 @@ const Heading = ({ bulgarian }) => {
           <h1 className={`${classes.hero__heading} ${classes.henni}`}>Denitza Krastanova</h1>
         }
         { bulgarian ?
-          <h3 className={`${classes.subTitle}`}>"Няма нищо ново освен начинът на подреждане" - Уил Дюрант</h3>
+          <h3 className={`${classes.subTitle}`}>&quot;Няма нищо ново освен начинът на подреждане&quot; - Уил Дюрант</h3>
         :
-          <h3 className={`${classes.typewritter}`}>'Nothing is new except arrangement' - Will Durant</h3>
+          <h3 className={`${classes.typewritter}`}>&quot;Nothing is new except arrangement&quot; - Will Durant</h3>
         }
         
       </div>
