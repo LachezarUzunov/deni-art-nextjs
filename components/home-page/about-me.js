@@ -62,11 +62,6 @@ const AboutMe = ({ bulgarian }) => {
             :
               <p className="typewriter shadow">In 2008, I graduated from Language School &quot;Ivan Vazov&quot; in Smolyan with German language. The same year, I continued my education at the University of &quot;St. Kliment Ohridski&quot;, majoring in German philology, and subsequently enrolled in a master&apos;s degree &quot;Philosophy of Mind and Language&quot;. In 2022, I graduated from the Master&apos;s program of the NBU, &quot;Criminology and Crime Prevention Policies&quot;.</p>
             }
-       
-            <p className="shadow">
-              { bulgarian ? '' : '' }
-            
-            </p>
             <div className={classes.btn_mobile}>
               { bulgarian ?
                 <Link className={`btn__primary ${classes.btn} bgFont`} href="/contact-me">

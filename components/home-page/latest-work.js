@@ -83,7 +83,7 @@ const LatestWork = ({ bulgarian }) => {
             return (
               <Painting
                 key={p.key}
-                src={`/paintings/${p.name}.jpg`}
+                src={`/paintings/${p.name}.webp`}
                 alt={p.name}
                 name={p.name}
                 enName={p.enName}
@@ -94,8 +94,8 @@ const LatestWork = ({ bulgarian }) => {
                 dimensions={p.dimensions}
                 title={p.title}
                 enTitle={p.enTitle}
-                text={`${p.text?.trim().split(' ').slice(0, 50). join(' ')}...`}
-                enText={`${p.enText?.trim().split(' ').slice(0, 50). join(' ')}...`}
+                text={`${p.text?.trim().split(' ').slice(0, 50).join(' ')}...`}
+                enText={`${p.enText?.trim().split(' ').slice(0, 50).join(' ')}...`}
                 bulgarian={bulgarian}
               />
             );

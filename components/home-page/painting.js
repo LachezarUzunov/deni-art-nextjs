@@ -6,8 +6,6 @@ import classes from "./painting.module.css";
 
 const Painting = ({ src, name, enName, alt, technique, enTechnique, width, height, dimensions, title, enTitle, text, enText, bulgarian }) => {
 
-  const splitted = text?.split()
-
   return (
     <section className={classes.painting__section}>
       <div className={`${classes.blur_load} ${classes.background_image}`}>
