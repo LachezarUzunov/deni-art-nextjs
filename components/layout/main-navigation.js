@@ -8,16 +8,16 @@ import Link from "next/link";
 import { Fragment, useState, useContext } from "react";
 import Image from "next/image";
 import LanguageContext from "@/store/language";
+import { useRouter } from "next/router";
 
 const MainNavigation = ({ bulgarianVersion }) => {
   const languageCtx = useContext(LanguageContext);
-
-  const [active, setActive] = useState("home");
+  const router = useRouter();
+  const { pathname } = router;
   const [openMobile, setOpenMobile] = useState(true);
   const [bulgarian, setBulgarian] = useState(true);
 
   const onMenuClick = (e) => {
-    setActive(e.target.name);
     setOpenMobile(true);
   };
 
@@ -63,7 +63,7 @@ const MainNavigation = ({ bulgarianVersion }) => {
             <Link
               name="home"
               className={`bgFont ${classes.link} ${
-                active === "home" ? classes.active : ""
+                pathname === "/" ? classes.active : ""
               }`}
               href="/"
             >
@@ -74,7 +74,7 @@ const MainNavigation = ({ bulgarianVersion }) => {
             <Link
               name="painting"
               className={`bgFont ${classes.link} ${
-                active === "painting" ? classes.active : ""
+                pathname === "/paintings" ? classes.active : ""
               }`}
               href="/paintings"
             >
@@ -85,7 +85,7 @@ const MainNavigation = ({ bulgarianVersion }) => {
             <Link
               name="drawing"
               className={`bgFont ${classes.link} ${
-                active === "drawing" ? classes.active : ""
+                pathname === "/drawings" ? classes.active : ""
               }`}
               href="/drawings"
             >
@@ -96,7 +96,7 @@ const MainNavigation = ({ bulgarianVersion }) => {
             <Link
               name="contact"
               className={`bgFont ${classes.link } ${
-                active === "contact" ? classes.active : ""
+                pathname === "/contact-me" ? classes.active : ""
               }`}
               href="/contact-me"
             >
@@ -154,7 +154,7 @@ const MainNavigation = ({ bulgarianVersion }) => {
             <Link
               name="home"
               className={`${classes.link} ${
-                active === "home" ? classes.active : ""
+                pathname === "/" ? classes.active : ""
               } typewriter`}
               href="/"
             >
@@ -165,7 +165,7 @@ const MainNavigation = ({ bulgarianVersion }) => {
             <Link
               name="painting"
               className={`${classes.link} ${
-                active === "painting" ? classes.active : ""
+                pathname === "/paintings" ? classes.active : ""
               } typewriter`}
               href="/paintings"
             >
@@ -176,7 +176,7 @@ const MainNavigation = ({ bulgarianVersion }) => {
             <Link
               name="drawing"
               className={`${classes.link} ${
-                active === "drawing" ? classes.active : ""
+                pathname === "/drawings" ? classes.active : ""
               } typewriter`}
               href="/drawings"
             >
@@ -187,7 +187,7 @@ const MainNavigation = ({ bulgarianVersion }) => {
             <Link
               name="contact"
               className={`${classes.link} ${
-                active === "contact" ? classes.active : ""
+                pathname === "/contact-me" ? classes.active : ""
               } typewriter`}
               href="/contact-me"
             >

@@ -1,7 +1,6 @@
-import Painting from '@/components/home-page/painting';
 import classes from './index.module.css'
 import PaintingWithModal from '@/components/paintings/paintingWithModal';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import LanguageContext from '@/store/language';
 import { getAllPaintings } from '@/lib/paintings-util';
 
@@ -89,6 +88,19 @@ export default function Paintings(props) {
   const languageCtx = useContext(LanguageContext);
   const bulgarian = languageCtx.version;
 
+  const [currentPage, setCurrentPage] = useState(1);
+  const paintingsPerPage = 5;
+  const indexOfLastPainting = currentPage * paintingsPerPage;
+  const indexOfFirstPainting = indexOfLastPainting - paintingsPerPage;
+  const currentPaintings = paintings.slice(indexOfFirstPainting, indexOfLastPainting);
+
+  // Pagination Controls
+  const pageNumbers = Math.ceil(paintings.length / paintingsPerPage);
+
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
+
   for (const painting of paintings) {
     const splitted = painting.content.split('enText:');
     const enText = splitted[1];
@@ -101,7 +113,7 @@ export default function Paintings(props) {
         <section className={classes.background}>
             <section className={classes.overlay}>
             <section className="container">
-                {paintings.map(p => {
+                {currentPaintings.map(p => {
                     return (
                         <PaintingWithModal
                             key={p.key}
@@ -125,6 +137,18 @@ export default function Paintings(props) {
                 })}
             </section>
             </section>
+
+            <div className="pagination">
+              {Array.from({ length: pageNumbers }, (_, index) => index + 1).map((pageNumber) => (
+                <button
+                  key={pageNumber}
+                  onClick={() => handlePageChange(pageNumber)}
+                  className={currentPage === pageNumber ? 'active' : ''}
+                >
+                  {pageNumber}
+                </button>
+              ))}
+            </div>
         </section>
     )
 }

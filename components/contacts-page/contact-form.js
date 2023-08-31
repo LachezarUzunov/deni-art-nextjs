@@ -45,7 +45,7 @@ const ContactForm = () => {
           <textarea required id="question"></textarea>
           <div className={classes.centered_btn}>
             {bulgarian ?
-              <button className="btn__primary bgFont">Изпрати</button>
+              <button className={`btn__primary bgFont`}>Изпрати</button>
             :
               <button className="btn__primary typewriter">Send</button>
             }

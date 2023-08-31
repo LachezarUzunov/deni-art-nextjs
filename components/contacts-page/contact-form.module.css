@@ -30,6 +30,9 @@
 }
 
 .centered_btn {
+  margin-top: 2rem;
+  /* color: hsl(317 100% 54%); */
+  /* color: transparent; */
   display: flex;
   justify-content: center;
 }

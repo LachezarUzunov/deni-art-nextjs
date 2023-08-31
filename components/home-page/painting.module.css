@@ -2,10 +2,6 @@
   max-width: 48%;
 }
 
-/* .background_image {
-  background-image: url("../../public/paintings-small/basmaq.jpg");
-} */
-
 .image_title {
   font-size: 3.2rem;
   margin-top: 1.6rem;
@@ -14,24 +10,8 @@
 
 .btn {
   margin-bottom: 6rem;
-  display: flex;
-  gap: 2rem;
-  align-items: center;
-  transition: 300ms ease-in-out;
+  margin-top: 2rem;
   width: max-content;
-}
-
-.btn:hover {
-  display: flex;
-  gap: 4rem;
-  align-items: center;
-}
-
-.image {
-  border: 2px solid white;
-  object-fit: cover;
-  object-position: center;
-  cursor: url("../../public/site/eye.svg"), pointer;
 }
 
 .fragment {

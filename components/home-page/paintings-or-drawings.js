@@ -75,40 +75,54 @@ const PaintingsOrDrawings = ({ bulgarian }) => {
       <section className={classes.mobile_view}>
        
           <article className={`${classes.paintingBg}`}
-        >
-          { bulgarian ?
-            <h1>Картини</h1>
-          :
-            <h1>Paintings</h1>
-          }
-
-          { bulgarian ?
-            <Link href="/paintings">
-              Разгледай
-            </Link>
-          :
-            <Link href="/paintings">
-              Take a look
-            </Link>
-          }
+          >
+            <article className={classes.overlay}>
+              <div className={classes.btnSection}>
+                <div className="">
+                { bulgarian ?
+                  <h1 className={`${classes.mTitle} bgTitle`}>Картини</h1>
+                :
+                  <h1 className={`${classes.mTitle} henni`}>Paintings</h1>
+                }
+                <div className={classes.btns}>
+                { bulgarian ?
+                  <Link className={`btn__primary ${classes.mBtn} bgFont`} href="/paintings">
+                    Разгледай
+                  </Link>
+                :
+                  <Link className={`btn__primary ${classes.mBtn} typewriter`} href="/paintings">
+                    Take a look
+                  </Link>
+                }
+                </div>
+                </div>
+              </div>
+            </article>
           </article>
-          <article
-        >
-          { bulgarian ?
-            <h1 >Рисунки</h1>
-          :
-            <h1 >Drawings</h1>
-          }
-
-          { bulgarian ?
-            <Link href="/drawings">
-              Разгледай
-            </Link>
-          :
-            <Link href="/paintings">
-              Take a look
-            </Link>
-          }
+          <article className={`${classes.drawingBg}`}
+          >
+            <article className={classes.overlay}>
+              <div className={classes.btnSection}>
+                <div>
+                  { bulgarian ?
+                    <h1 className={`${classes.mTitle} bgTitle`}>Рисунки</h1>
+                  :
+                    <h1 className={`${classes.mTitle} henni`}>Drawings</h1>
+                  }
+                  <div className={classes.btns}>
+                  { bulgarian ?
+                    <Link className={`btn__primary ${classes.mBtn} bgFont`} href="/drawings">
+                      Разгледай
+                    </Link>
+                  :
+                    <Link className={`btn__primary ${classes.mBtn} typewriter`} href="/paintings">
+                      Take a look
+                    </Link>
+                  }
+                  </div>
+                </div>
+              </div>
+            </article>
           </article>
       </section>
     </React.Fragment>

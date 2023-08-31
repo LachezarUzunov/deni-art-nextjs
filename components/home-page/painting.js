@@ -24,7 +24,7 @@ const Painting = ({ src, name, enName, alt, technique, enTechnique, width, heigh
         { bulgarian ?
           <p className={`${classes.fragment} bgFont`}>Размери в сантиметри - {dimensions}</p>
         :
-          <p className={`${classes.fragment} typewriter`}>Dimensions in sentimeters - {dimensions}</p>
+          <p className={`${classes.fragment} typewriter`}>Dimensions in cm - {dimensions}</p>
         }
         { bulgarian ?
           <p className={`${classes.fragment} bgFont`}>Техника на рисуване - {technique}</p>
@@ -46,12 +46,10 @@ const Painting = ({ src, name, enName, alt, technique, enTechnique, width, heigh
         { bulgarian ?
           <Link className={`btn__primary ${classes.btn} bgFont`} href="/contact-me">
             Окачи я в своя дом
-            <BsArrowRight />
           </Link>
         :
           <Link className={`btn__primary ${classes.btn} typewriter`} href="/contact-me">
             Hang it in your home
-            <BsArrowRight />
           </Link>
         }
         

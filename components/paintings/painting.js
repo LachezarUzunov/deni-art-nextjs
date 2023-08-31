@@ -25,11 +25,9 @@ export default function Painting({ src, alt, name, enName, technique, enTechniqu
         
         <div className={classes.image_section}>
             <div className={`${classes.display}`}>
-                <ImgFrame>
+            
                 <Image onClick={() => setShowImgOverlay(true)} src={src} alt={alt} width={`${Math.floor(width * 1.1)}`} height={`${Math.floor(height * 1.1)}`}/>
-                { bulgarian ? <div className="text">{name}</div> :
-           <div className="enText">{enName}</div>}
-                </ImgFrame>
+               
             </div>
             <div className={`${classes.display_sm} ${classes.centered}`}>
                 <Image src={src} alt={alt} width={`${Math.floor(width * 0.9)}`} height={`${Math.floor(height * 0.9)}`}/>
@@ -58,7 +56,7 @@ export default function Painting({ src, alt, name, enName, technique, enTechniqu
             
                 {splittedBg && bulgarian ? 
                     <div className={`${classes.text}`}>
-                        {splittedBg.map((para, index) => (<p className='bgFont' key={index}>{para}</p>))}
+                        {splittedBg.map((para, index) => (<p className={`bgFont`} key={index}>{para}</p>))}
                     </div>
                 : splittedEn ? 
                     <div className={classes.text}>

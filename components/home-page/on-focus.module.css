@@ -134,6 +134,9 @@
 .desktop {
   display: none;
 }
+.onfocus__info {
+  padding: 1rem;
+}
 }
 
 @media screen and (max-width: 370px) {

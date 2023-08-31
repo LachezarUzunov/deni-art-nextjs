@@ -126,17 +126,53 @@
   
   .mobile_view {
     display: block;
+    min-height: 100vh;
   }
 
   .paintingBg {
     background: url("../../public/site/paintings_p.webp");
     background-size: cover;
     background-repeat: no-repeat;
+    min-height: 50vh;
+  }
+
+  .drawingBg {
+    background: url("../../public/site/drawings_p.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 50vh;
+  }
+
+  .overlay {
+    min-height: 50vh;
+    background-color: rgba(0, 0, 0, 0.71);
+  }
+
+  .btnSection {
+    display: flex;
+    justify-content: center;
+    padding-top: 12vh;
+  }
+
+  .mBtn {
+    font-size: 2rem;
+    margin-top: 4rem;
+  }
+
+  .btns {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .mTitle {
+    font-size: 8rem;
   }
 }
 
 @media screen and (max-width: 450px) {
-
+  .mTitle {
+    font-size: 6rem;
+  }
 }
 
 @media screen and (max-width: 370px) {

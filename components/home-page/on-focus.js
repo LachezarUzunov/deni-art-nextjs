@@ -4,7 +4,6 @@ import { Blurhash } from "react-blurhash";
 import Image from "next/image";
 import Link from "next/link";
 import classes from "./on-focus.module.css";
-import ImgFrame from "../layout/ImgFrame";
 
 const OnFocus = ({ bulgarian }) => {
 
@@ -25,7 +24,7 @@ const OnFocus = ({ bulgarian }) => {
       <section className={`container ${classes.focus__section}`}>
   
       <div className={classes.centered}>
-        <ImgFrame>
+      
           <Image
             className={`${classes.image_onFocus}`}
             src="/paintings/Басмая.jpg"
@@ -33,9 +32,7 @@ const OnFocus = ({ bulgarian }) => {
             width={400 / (60 / 40)}
             height={400}
           />
-          { bulgarian ? <div className="text">Басмая</div> :
-           <div className="enText">Basmaya</div>}
-        </ImgFrame>
+    
       </div>
         <div className={`${classes.image_onFocus_m}`}>
           <Image
@@ -59,9 +56,9 @@ const OnFocus = ({ bulgarian }) => {
           }
           
           { bulgarian ?
-            <p className={`bgFont`}>Размери в сантиметри - 60 х 40</p>
+            <p className={`bgFont`}>Размери в см. - 60 х 40</p>
           :
-            <p className="typewriter">Dimensions in santimeters - 60 x 40</p>
+            <p className="typewriter">Dimensions in cm - 60 x 40</p>
           }
           
           { bulgarian ?
@@ -77,11 +74,11 @@ const OnFocus = ({ bulgarian }) => {
           <div className={classes.centered}>
             { bulgarian ?
               <Link className={`btn__primary ${classes.btn}`} href="/contact-me">
-              Окачи я в своя дом {' '} <BsArrowRight />
+              Окачи я в своя дом
               </Link>
             :
               <Link className={`btn__primary typewriter`} href="/contact-me">
-              Hang it in your home {' '} <BsArrowRight />
+              Hang it in your home
               </Link>
             }
             

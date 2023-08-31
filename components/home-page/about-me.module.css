@@ -1,5 +1,4 @@
 .background {
-  /* background-image: url("../../public/site/smoke_p.webp"); */
   background-image: url("../../public/site/smoke_opt.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -20,10 +19,7 @@
 }
 
 .btn {
-  display: flex;
-  gap: 2rem;
-  align-items: center;
-  transition: 300ms ease-in-out;
+  margin-top: 2rem;
   width: max-content;
 }
 

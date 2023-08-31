@@ -80,6 +80,15 @@ aspect-ratio - 0.7384
   .hero {
     min-height: 100vh;
   }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .subTitle {
+    letter-spacing: .2rem;
+    font-size: 2.6rem;
+  }
  
 }
 
