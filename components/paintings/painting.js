@@ -48,9 +48,9 @@ export default function Painting({ src, alt, name, enName, technique, enTechniqu
                     <p className='typewriter'>Drawing technique - {enTechnique}</p>
                 }
                 { bulgarian ?
-                    <p className='bgFont'>Размери в сантиметри - {dimensions}</p>
+                    <p className='bgFont'>Размери в см. - {dimensions}</p>
                 :
-                    <p className='typewriter'>Dimensions in sentimeters - {dimensions}</p>
+                    <p className='typewriter'>Dimensions in cm. - {dimensions}</p>
                 }
                 { sold && bulgarian ? 
                     <p className='bgFont'>ПРОДАДЕНА</p>
