@@ -25,10 +25,10 @@ export default function Painting({ src, alt, name, enName, technique, enTechniqu
         <React.Fragment>
         {showImgOverlay && <PaintingOverlayModal img={src} alt={alt} width={width} height={height} onClose={onClose}/>}
         { bulgarian ?
-                    <Title title={name}/>
-                :
-                    <Title title={enName} className={`${classes.title} henni`}></Title>
-                }
+                <Title title={name} bulgarian={bulgarian}/>
+            :
+                <Title title={enName} className={`${classes.title} henni`}></Title>
+        }
         <div className={classes.image_section}>
        
             <div className={`${classes.display}`}>

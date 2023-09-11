@@ -52,3 +52,16 @@
 }
 
 
+@media screen and (max-width: 500px) {
+  .pagination button {
+    margin: 0 3px;
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .pagination button {
+    margin: 0 2px;
+    font-size: 1.3rem;
+  }
+}

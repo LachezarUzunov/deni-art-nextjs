@@ -19,13 +19,6 @@
 
 .pagination button {
   margin: 0 5px;
-  padding: 5px 10px;
-  border: 1px solid #ccc;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-.pagination button {
   color: hsl(317 100% 54%);
   background-color: transparent;
   font-size: 2rem;
@@ -52,3 +45,16 @@
 }
 
 
+@media screen and (max-width: 500px) {
+  .pagination button {
+    margin: 0 3px;
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .pagination button {
+    margin: 0 2px;
+    font-size: 1.3rem;
+  }
+}
