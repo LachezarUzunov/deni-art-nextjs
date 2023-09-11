@@ -30,9 +30,9 @@ const Painting = ({ src, name, enName, alt, technique, enTechnique, width, heigh
           <p className={`${classes.fragment} typewriter`}>Drawing technique - {enTechnique}</p>
         }
         { bulgarian ?
-          <h2 className={`${classes.title} bgTitle`}>{title}</h2>
+          <h2 className={`${classes.title} ${classes.centered} bgTitle`}>{title}</h2>
         :
-          <h2 className={`${classes.title} henni`}>{enTitle}</h2>
+          <h2 className={`${classes.title} ${classes.centered} henni`}>{enTitle}</h2>
         }
         { bulgarian ?
           <p className={`${classes.fragment} bgFont`}>{text}</p>
