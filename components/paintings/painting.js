@@ -59,9 +59,9 @@ export default function Painting({ src, alt, name, enName, technique, enTechniqu
                     <p className='typewriter'>SOLD</p>
                 : ''}
                 { bulgarian ?
-                    <h3>{heading}</h3>
+                    <h3 className={classes.mobile_heading}>{heading}</h3>
                 :
-                    <h3 className='henni'>{enHeading}</h3>
+                    <h3 className={`${classes.mobile_heading} henni`}>{enHeading}</h3>
                 }
             
                 {splittedBg && bulgarian ? 
