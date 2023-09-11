@@ -1,8 +1,9 @@
 import Painting from '@/components/paintings/painting';
 import classes from './index.module.css'
 import PaintingWithModal from '@/components/paintings/paintingWithModal';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import LanguageContext from '@/store/language';
+import { FaBackward, FaForward } from 'react-icons/fa';
 
 const PAINTINGS = [
     {
@@ -647,11 +648,37 @@ export default function Drawings() {
 
     const bulgarian = languageCtx.version;
 
+    const [currentPage, setCurrentPage] = useState(1);
+    const paintingsPerPage = 10;
+    const indexOfLastPainting = currentPage * paintingsPerPage;
+    const indexOfFirstPainting = indexOfLastPainting - paintingsPerPage;
+    const currentPaintings = PAINTINGS.slice(indexOfFirstPainting, indexOfLastPainting);
+  
+    // Pagination Controls
+    const pageNumbers = Math.ceil(PAINTINGS.length / paintingsPerPage);
+  
+    const handlePageChange = (pageNumber) => {
+      setCurrentPage(pageNumber);
+    };
+
     return (
         <section className={classes.background}>
             <section className={classes.overlay}>
             <section className="container">
-                {PAINTINGS.map(p => {
+            <div className={`${classes.pagination} ${classes.topPag}`}>
+                  <button onClick={() => setCurrentPage(1)}><FaBackward /></button>
+                  {Array.from({ length: pageNumbers }, (_, index) => index + 1).map((pageNumber) => (
+                  <button
+                    key={pageNumber}
+                    onClick={() => handlePageChange(pageNumber)}
+                    className={currentPage === pageNumber ? classes.active : ''}
+                  >
+                    {pageNumber}
+                  </button>
+                  ))}
+                  <button onClick={() => setCurrentPage(pageNumbers)}><FaForward /></button>
+                </div>
+                {currentPaintings.map(p => {
                     return (
                         <PaintingWithModal
                             key={p.key}
@@ -669,6 +696,20 @@ export default function Drawings() {
                         />
                   );
                 })}
+
+                <div className={`${classes.pagination}`}>
+                  <button onClick={() => setCurrentPage(1)}><FaBackward /></button>
+                  {Array.from({ length: pageNumbers }, (_, index) => index + 1).map((pageNumber) => (
+                  <button
+                    key={pageNumber}
+                    onClick={() => handlePageChange(pageNumber)}
+                    className={currentPage === pageNumber ? classes.active : ''}
+                  >
+                    {pageNumber}
+                  </button>
+                  ))}
+                  <button onClick={() => setCurrentPage(pageNumbers)}><FaForward /></button>
+                </div>
             </section>
             </section> 
         </section>

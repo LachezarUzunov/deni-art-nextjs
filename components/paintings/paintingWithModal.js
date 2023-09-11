@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Painting from './painting';
 import PaintingOverlayModal from '../layout/paintingOverlay';
 
-const PaintingWithModal = ({ src, alt, name, enName, technique, enTechnique, width, height, dimensions, heading, enHeading, text, enText, bulgarian }) => {
+const PaintingWithModal = ({ src, alt, name, enName, technique, enTechnique, width, height, dimensions, heading, enHeading, text, enText, bulgarian, sold }) => {
   const [showImgOverlay, setShowImgOverlay] = useState(false);
 
   const onClose = () => {
@@ -26,6 +26,7 @@ return (
         text={text}
         enText={enText}
         bulgarian={bulgarian}
+        sold={sold}
         onClick={() => setShowImgOverlay(true)} />
       {showImgOverlay && (
         <PaintingOverlayModal 

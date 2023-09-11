@@ -1,6 +1,5 @@
 .image_section {
     display: flex;
-    padding-top: 10rem;
     gap: 6rem;
     margin-top: 2rem;
     align-items: center;
@@ -53,6 +52,19 @@
       height: 3px;
       width: 75px;
       margin-bottom: 0.25em;
+  }
+
+  .centered {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  @media screen and (max-width: 960px) {
+  
+    .centered {
+      display: flex;
+      justify-content: center;
+    }
   }
 
 @media screen and (max-width: 860px) {

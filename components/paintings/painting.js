@@ -3,8 +3,10 @@ import classes from './painting.module.css';
 import React, { useState } from 'react';
 import PaintingOverlayModal from '../layout/paintingOverlay';
 import ImgFrame from '../layout/ImgFrame';
+import Link from 'next/link';
+import Title from '../layout/Title';
 
-export default function Painting({ src, alt, name, enName, technique, enTechnique, width, height, dimensions, heading, enHeading, text, enText, bulgarian }) {
+export default function Painting({ src, alt, name, enName, technique, enTechnique, width, height, dimensions, heading, enHeading, text, enText, bulgarian, sold }) {
     const [showImgOverlay, setShowImgOverlay] = useState(false);
     const onClose = () => {
         setShowImgOverlay(false)
@@ -22,8 +24,13 @@ export default function Painting({ src, alt, name, enName, technique, enTechniqu
 
         <React.Fragment>
         {showImgOverlay && <PaintingOverlayModal img={src} alt={alt} width={width} height={height} onClose={onClose}/>}
-        
+        { bulgarian ?
+                    <Title title={name}/>
+                :
+                    <Title title={enName} className={`${classes.title} henni`}></Title>
+                }
         <div className={classes.image_section}>
+       
             <div className={`${classes.display}`}>
             
                 <Image onClick={() => setShowImgOverlay(true)} src={src} alt={alt} width={`${Math.floor(width * 1.1)}`} height={`${Math.floor(height * 1.1)}`}/>
@@ -32,12 +39,9 @@ export default function Painting({ src, alt, name, enName, technique, enTechniqu
             <div className={`${classes.display_sm} ${classes.centered}`}>
                 <Image src={src} alt={alt} width={`${Math.floor(width * 0.9)}`} height={`${Math.floor(height * 0.9)}`}/>
             </div>
+            
             <div>
-                { bulgarian ?
-                    <h2 className={classes.title}>{name}</h2>
-                :
-                    <h2 className={`${classes.title} henni`}>{enName}</h2>
-                }
+                
                 { bulgarian ?
                     <p className='bgFont'>Техника на рисуване - {technique}</p>
                 :
@@ -48,6 +52,12 @@ export default function Painting({ src, alt, name, enName, technique, enTechniqu
                 :
                     <p className='typewriter'>Dimensions in sentimeters - {dimensions}</p>
                 }
+                { sold && bulgarian ? 
+                    <p className='bgFont'>ПРОДАДЕНА</p>
+                : ''}
+                { sold && ! bulgarian ? 
+                    <p className='typewriter'>SOLD</p>
+                : ''}
                 { bulgarian ?
                     <h3>{heading}</h3>
                 :
@@ -65,6 +75,18 @@ export default function Painting({ src, alt, name, enName, technique, enTechniqu
                 : 
                     null
                 }
+                {! sold && <div className={classes.centered}>
+                    { bulgarian ?
+                    <Link className={`btn__primary ${classes.btn} bgFont`} href="/contact-me">
+                    Окачи я в своя дом
+                    </Link>
+                    :
+                    <Link className={`btn__primary typewriter`} href="/contact-me">
+                    Hang it in your home
+                    </Link>
+                    }
+                </div> }
+                
             </div>  
         </div>
         </React.Fragment>

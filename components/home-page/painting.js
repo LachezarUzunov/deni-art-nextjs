@@ -1,5 +1,3 @@
-import { BsArrowRight } from "react-icons/bs";
-
 import Image from "next/image";
 import Link from "next/link";
 import classes from "./painting.module.css";
