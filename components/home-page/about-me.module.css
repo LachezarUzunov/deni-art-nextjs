@@ -38,12 +38,14 @@
 }
 
 .bgFontTitle {
-  font-family: 'gothic';
+  font-family: 'Rubik Moonrocks', cursive;
+  font-family: 'Rubik Dirt', cursive;
   letter-spacing: .4rem;
 }
 
 .bgTitleAnother {
-  font-family: 'gothic';
+  font-family: 'Rubik Moonrocks', cursive;
+  font-family: 'Rubik Dirt', cursive;
   letter-spacing: .4rem;
 }
 

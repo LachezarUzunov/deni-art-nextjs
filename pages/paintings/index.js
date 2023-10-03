@@ -100,7 +100,6 @@ export default function Paintings(props) {
 
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
-    console.log(pageNumber)
   };
 
 

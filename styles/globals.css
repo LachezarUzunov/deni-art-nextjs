@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kurale&family=Pangolin&family=Reggae+One&family=Rubik+Dirt&family=Rubik+Wet+Paint&family=Ruslan+Display&family=Shantell+Sans:wght@300&family=Underdog&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kablammo&family=Rubik+Beastly&family=Rubik+Distressed&family=Rubik+Gemstones&family=Rubik+Marker+Hatch&family=Rubik+Maze&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alice&family=Kurale&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Rubik+Moonrocks&display=swap');
 @font-face {
   font-family: gothic;
   src: local('gothic'),
@@ -33,6 +33,8 @@
     font-family: 'Shantell Sans', cursive;
 
     font-family: 'Underdog', cursive;
+
+    font-family: 'Rubik Moonrocks', cursive;
  */
 
 :root {
@@ -254,7 +256,7 @@ textarea:focus {
 }
 
 .bgTitle {
-  font-family: 'gothic';
+  font-family: 'Rubik Moonrocks', cursive;
 }
 
 .shadow {
@@ -306,7 +308,7 @@ textarea:focus {
   font-size:30px;
   margin-top: 20px;
   text-align: center;
-  font-family: 'gothic';
+  font-family: 'Rubik Moonrocks', cursive;
   letter-spacing: 1rem;
 }
 
