@@ -25,6 +25,7 @@
     font-family: 'Reggae One', cursive;
 
     font-family: 'Rubik Dirt', cursive;
+    font-family: 'Rubik Dirt', cursive;
 
     font-family: 'Rubik Wet Paint', cursive;
 
@@ -257,6 +258,7 @@ textarea:focus {
 
 .bgTitle {
   font-family: 'Rubik Moonrocks', cursive;
+  color: white;
 }
 
 .shadow {

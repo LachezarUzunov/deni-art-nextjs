@@ -11,7 +11,7 @@ const OnFocus = ({ bulgarian }) => {
     <section className={classes.background}>
       <div className={classes.mobile}>
         {bulgarian ?
-          <h2>На фокус</h2>
+          <h2 className={classes.bgTitle}>На фокус</h2>
         :
           <h2 className="henni">On focus</h2>
         }

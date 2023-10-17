@@ -20,9 +20,9 @@ const AboutMe = ({ bulgarian }) => {
         <section className={classes.info}>
           <article className={classes.display}>
             {bulgarian ?
-              <h4 className={classes.bgTitleAnother}>О, вий, които имате очи печални, с безкрая синкав на морето ги хранете</h4>
+              <h4 className={classes.bgTitleAnother}>Изкуството няма нищо общо с яснота. Нито набърква в ясното, нито изяснява.</h4>
             :
-              <h4 className="henni">Oh ye! who have your eye-balls vex&apos;d and tir&apos;d, Feast them upon the wideness of the Sea</h4>
+              <h4 className="henni">Art has nothing to do with with clarity, does not dabble in the clear and does not clear</h4>
             }
            
           </article>

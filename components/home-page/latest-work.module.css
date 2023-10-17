@@ -9,8 +9,9 @@
 }
 
 .bgTitle {
-  font-family: 'gothic';
-  font-size: 3rem;
+  font-family: 'Rubik Moonrocks', cursive;
+  letter-spacing: .4rem;
+  font-size: 4rem;
 }
 
 .subtitle {
