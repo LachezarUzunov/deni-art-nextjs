@@ -29,10 +29,14 @@
   color: var(--gray);
 }
 
+.rubik {
+  font-family: 'Rubik Moonrocks', cursive;
+  color: white;
+  font-size: 2rem;
+}
+
 .centered_btn {
   margin-top: 2rem;
-  /* color: hsl(317 100% 54%); */
-  /* color: transparent; */
   display: flex;
   justify-content: center;
 }

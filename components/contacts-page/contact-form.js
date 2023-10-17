@@ -11,13 +11,13 @@ const ContactForm = () => {
     <section className={classes.form__section}>
       <div className={classes.form_div}>
         { bulgarian ?
-          <h2 className={`${classes.header} bgFont`}>КОНТАКТИ</h2>
+          <h2 className={`${classes.header} ${classes.rubik}`}>КОНТАКТИ</h2>
         :
           <h2 className={`${classes.header} typewriter`}>CONTACTS</h2>
         }
         
         { bulgarian ?
-          <h2 className={classes.header_two}>Пишете ми</h2>
+          <h2 className={`${classes.header_two} bgFont`}>Пишете ми</h2>
         :
           <h2 className={`${classes.header_two} henni`}>Drop me a line</h2>
         }
@@ -26,19 +26,19 @@ const ContactForm = () => {
       <div className={classes.form_center}>
         <form className={classes.form}>
           { bulgarian ?
-            <label htmlFor="name">Име</label>
+            <label className="bgFont" htmlFor="name">Име</label>
           :
             <label className="henni" htmlFor="name">Name</label>
           }
           <input id="name" required />
           { bulgarian ?
-            <label htmlFor="name">Имейл</label>
+            <label className="bgFont" htmlFor="name">Имейл</label>
           :
             <label className="henni" htmlFor="name">Email</label>
           }
           <input id="email" required />
           { bulgarian ?
-            <label htmlFor="name">Вашето запитване</label>
+            <label className="bgFont" htmlFor="name">Вашето запитване</label>
           :
             <label className="henni" htmlFor="name">Your message</label>
           }
