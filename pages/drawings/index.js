@@ -305,6 +305,7 @@ const PAINTINGS = [
       enTechnique: "acrylic, mixed media",
       продадена: false,
       sold: false,
+      wide: true
     },
     {
       key: "26",
@@ -694,6 +695,7 @@ export default function Drawings() {
                             dimensions={p.dimensions}
                             sold={p.sold}
                             bulgarian={bulgarian}
+                            wide={p.wide}
                         />
                   );
                 })}

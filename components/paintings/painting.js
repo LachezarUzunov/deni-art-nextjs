@@ -5,6 +5,7 @@ import PaintingOverlayModal from '../layout/paintingOverlay';
 import ImgFrame from '../layout/ImgFrame';
 import Link from 'next/link';
 import Title from '../layout/Title';
+import PaintingOverlayModalMobile from '../layout/paintingOverlayMobile';
 
 export default function Painting({ 
     src, 
@@ -21,11 +22,17 @@ export default function Painting({
     text, 
     enText, 
     bulgarian, 
-    sold 
+    sold,
+    wide
 }) {
     const [showImgOverlay, setShowImgOverlay] = useState(false);
+    const [showImgOverlayMobile, setShowImgOverlayMobile] = useState(false);
     const onClose = () => {
         setShowImgOverlay(false)
+    }
+
+    const onMobileClose = () => {
+        setShowImgOverlayMobile(false)
     }
    
     let splittedBg;
@@ -40,6 +47,7 @@ export default function Painting({
 
         <React.Fragment>
         {showImgOverlay && <PaintingOverlayModal img={src} alt={alt} width={width} height={height} onClose={onClose}/>}
+        {showImgOverlayMobile && <PaintingOverlayModalMobile img={src} alt={alt} width={width} height={height} onClose={onMobileClose}/>}
         { bulgarian ?
                 <Title title={name} bulgarian={bulgarian}/>
             :
@@ -52,9 +60,12 @@ export default function Painting({
                 <Image onClick={() => setShowImgOverlay(true)} src={src} alt={alt} width={`${Math.floor(width * 1.1)}`} height={`${Math.floor(height * 1.1)}`}/>
                
             </div>
-            <div className={`${classes.display_sm} ${classes.centered}`}>
-                <Image src={src} alt={alt} width={`${Math.floor(width * 0.9)}`} height={`${Math.floor(height * 0.9)}`}/>
-            </div>
+            {!wide && <div className={`${classes.display_sm} ${classes.centered}`}>
+                <Image onClick={() => setShowImgOverlayMobile(true)} src={src} alt={alt} width={`${Math.floor(width * 0.9)}`} height={`${Math.floor(height * 0.9)}`} wide={wide}/>
+            </div>}
+            {wide && <div className={`${classes.display_sm} ${classes.centered}`}>
+                <Image src={src} alt={alt} width={`${Math.floor(width * 0.6)}`} height={`${Math.floor(height * 0.6)}`}/>
+            </div>}
             
             <div>
                 

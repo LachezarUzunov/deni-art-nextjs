@@ -11,7 +11,7 @@ const PaintingOverlayModal = ({ img, alt, width, height, onClose }) => {
                     <div>
                         <Image src={img} alt={alt} width={`${Math.floor(width * 1.8)}`} height={`${Math.floor(height * 1.8)}`}/>
                     </div>  
-                </div> 
+                </div>
             </article>
         </section>
     )
