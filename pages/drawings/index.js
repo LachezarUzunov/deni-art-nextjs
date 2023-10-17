@@ -430,6 +430,7 @@ const PAINTINGS = [
       key: "36",
       height: 30,
       width: 20,
+      name: "Смъртта като дете",
       dimensions: "30 x 20",
       enName: "Death As A Kid",
       technique: "акрил, смесена техника",
