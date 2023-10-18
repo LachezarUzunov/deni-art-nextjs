@@ -60,6 +60,12 @@ const OnFocus = ({ bulgarian }) => {
           :
             <p className="typewriter">Dimensions in cm - 60 x 40</p>
           }
+
+          { bulgarian ? 
+            <h3 className={`${classes.desktop} ${classes.bgTitle}`}>Звезднотраурни</h3>
+          :
+            <h3 className={`${classes.desktop} henni`}>Star Mournings</h3>
+          }
           
           { bulgarian ?
             <p className={`bgFont`}>

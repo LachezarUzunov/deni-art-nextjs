@@ -5,85 +5,6 @@ import LanguageContext from '@/store/language';
 import { getAllPaintings } from '@/lib/paintings-util';
 import { FaBackward, FaForward } from 'react-icons/fa'
 
-const PAINTINGS = [
-
-    {
-      key: "25",
-      height: 80,
-      width: 80,
-      dimensions: "80 x 80",
-      name: "Грозен феникс",
-      enName: "Ugly Phoenix",
-      technique: "акрил, смесена техника",
-      enTechnique: "acrylic, mixed media",
-      sold: false,
-      heading: "",
-      enHeading: "",
-      text: "",
-      enText: ""
-    },
-    {
-      key: "26",
-      height: 100,
-      width: 70,
-      dimensions: "100 x 70",
-      name: "Метаморт",
-      enName: "Metamort",
-      technique: "акрил, смесена техника",
-      enTechnique: "acrylic, mixed media",
-      sold: false,
-      heading: "",
-      enHeading: "",
-      text: "",
-      enText: ""
-    },
-    {
-      key: "27",
-      height: 80,
-      width: 60,
-      dimensions: "80 x 60",
-      name: "Жива илюзия",
-      enName: "Living Illusion",
-      technique: "акрил, смесена техника",
-      enTechnique: "acrylic, mixed media",
-      sold: false,   
-      heading: "",
-      enHeading: "",
-      text: "",
-      enText: ""
-    },
-    {
-      key: "28",
-      height: 60,
-      width: 40,
-      dimensions: "60 x 40",
-      name: "Преди възкресение",
-      enName: "Before Resurrection",
-      technique: "акрил, смесена техника",
-      enTechnique: "acrylic, mixed media",
-      sold: false,
-      heading: "",
-      enHeading: "",
-      text: "",
-      enText: ""
-    },
-    {
-      key: "29",
-      height: 60,
-      width: 40,
-      dimensions: "60 x 40",
-      name: "Денонощие",
-      enName: "Around The Clock",
-      technique: "акрил, смесена техника",
-      enTechnique: "acrylic, mixed media",
-      sold: false,
-      heading: "",
-      enHeading: "",
-      text: "",
-      enText: ""
-    },
-  ];
-
 export default function Paintings(props) {
   const paintings = props.paintings;
   const languageCtx = useContext(LanguageContext);
@@ -147,6 +68,7 @@ export default function Paintings(props) {
                               enText={p.enText}
                               sold={p.sold}
                               bulgarian={bulgarian}
+                              wide={p.wide}
                           />
                     );
                   })}

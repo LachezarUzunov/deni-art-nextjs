@@ -57,7 +57,9 @@ export default function Painting({
        
             <div className={`${classes.display}`}>
             
-                <Image onClick={() => setShowImgOverlay(true)} src={src} alt={alt} width={`${Math.floor(width * 1.1)}`} height={`${Math.floor(height * 1.1)}`}/>
+                {!wide && <Image onClick={() => setShowImgOverlay(true)} src={src} alt={alt} width={`${Math.floor(width * 1.1)}`} height={`${Math.floor(height * 1.1)}`}/>}
+
+                {wide && <Image src={src} alt={alt} width={`${Math.floor(width * 1.1)}`} height={`${Math.floor(height * 1.1)}`}/>}
                
             </div>
             {!wide && <div className={`${classes.display_sm} ${classes.centered}`}>

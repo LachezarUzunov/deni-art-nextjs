@@ -236,15 +236,16 @@ const PAINTINGS = [
     },
     {
       key: "20",
-      height: 40,
-      width: 29,
-      dimensions: "40 x 29",
+      height: 29,
+      width: 40,
+      dimensions: "29 x 40",
       name: "Самотно око",
       enName: "Lonely Eye",
       technique: "акрил, смесена техника",
       enTechnique: "acrylic, mixed media",
       продадена: false,
       sold: false,
+      wide: true
     },
     {
       key: "21",
@@ -252,7 +253,7 @@ const PAINTINGS = [
       width: 24,
       dimensions: "34 x 24",
       name: "Властелинът на обеците",
-      enName: "The Lord Of The Earings",
+      enName: "The Lord Of The Earrings",
       technique: "акрил, смесена техника",
       enTechnique: "acrylic, mixed media",
       продадена: false,
@@ -296,16 +297,15 @@ const PAINTINGS = [
     },
     {
       key: "25",
-      height: 25,
-      width: 35,
-      dimensions: "25 x 35",
+      height: 35,
+      width: 25,
+      dimensions: "35 x 25",
       name: "Джо",
       enName: "Joe",
       technique: "акрил, смесена техника",
       enTechnique: "acrylic, mixed media",
       продадена: false,
       sold: false,
-      wide: true
     },
     {
       key: "26",
@@ -390,6 +390,7 @@ const PAINTINGS = [
       enTechnique: "acrylic, mixed media",
       продадена: false,
       sold: false,
+      wide: true
     }, 
     {
       key: "33",
@@ -417,15 +418,16 @@ const PAINTINGS = [
     },  
     {
       key: "35",
-      height: 34,
-      width: 24,
-      dimensions: "34 x 24",
+      height: 24,
+      width: 34,
+      dimensions: "24 x 34",
       name: "Дървото на недоразумението",
       enName: "Tree Of Misconception",
       technique: "акрил, смесена техника",
       enTechnique: "acrylic, mixed media",
       продадена: false,
       sold: false,
+      wide: true
     },
     {
       key: "36",
@@ -441,15 +443,16 @@ const PAINTINGS = [
     }, 
     {
       key: "37",
-      height: 20,
-      width: 15,
-      dimensions: "20 x 15",
+      height: 15,
+      width: 20,
+      dimensions: "15 x 20",
       name: "Всяка ВИП русалка и нейното протеже",
       enName: "VIP Mermaid And Her Protege",
       technique: "акрил, смесена техника",
       enTechnique: "acrylic, mixed media",
       продадена: false,
       sold: false,
+      wide: true
     },
     {
       key: "38",

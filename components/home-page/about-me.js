@@ -20,9 +20,9 @@ const AboutMe = ({ bulgarian }) => {
         <section className={classes.info}>
           <article className={classes.display}>
             {bulgarian ?
-              <h4 className={classes.bgTitleAnother}>Изкуството няма нищо общо с яснота. Нито набърква в ясното, нито изяснява</h4>
+              <h4 className={classes.bgTitleAnother}>Изкуството няма нищо общо с яснота. Нито се набърква в ясното, нито изяснява</h4>
             :
-              <h4 className="henni">Art has nothing to do with with clarity, does not dabble in the clear and does not clear</h4>
+              <h4 className="henni">Art has nothing to do with clarity, does not dabble in the clear and does not clear</h4>
             }
            
           </article>
@@ -41,11 +41,11 @@ const AboutMe = ({ bulgarian }) => {
            
             { bulgarian ? 
               <h4 className={classes.display_m}>
-                Изкуството няма нищо общо с яснота. Нито набърква в ясното, нито изяснява
+                Изкуството няма нищо общо с яснота. Нито набърква се в ясното, нито изяснява
               </h4>
             :
               <h4 className={`${classes.display_m} henni`}>
-                Art has nothing to do with with clarity, does not dabble in the clear and does not clear
+                Art has nothing to do with clarity, does not dabble in the clear and does not clear
               </h4>
             }
 
