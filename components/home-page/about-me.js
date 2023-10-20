@@ -41,7 +41,7 @@ const AboutMe = ({ bulgarian }) => {
            
             { bulgarian ? 
               <h4 className={`${classes.display_m} ${classes.bgTitleAnother}`}>
-                Изкуството няма нищо общо с яснота. Нито набърква се в ясното, нито изяснява
+                Изкуството няма нищо общо с яснота. Нито се набърква в ясното, нито изяснява
               </h4>
             :
               <h4 className={`${classes.display_m} henni`}>
