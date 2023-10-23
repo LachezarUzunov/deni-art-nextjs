@@ -1,7 +1,7 @@
 .background {
     background-image: url("../../public/site/pink-dust-particles-splash-against-black-background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: contain;
+    background-repeat: repeat;
     min-height: 100vh;
   }
 

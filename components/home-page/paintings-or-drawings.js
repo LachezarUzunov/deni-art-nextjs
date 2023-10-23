@@ -115,7 +115,7 @@ const PaintingsOrDrawings = ({ bulgarian }) => {
                       Разгледай
                     </Link>
                   :
-                    <Link className={`btn__primary ${classes.mBtn} typewriter`} href="/paintings">
+                    <Link className={`btn__primary ${classes.mBtn} typewriter`} href="/drawings">
                       Take a look
                     </Link>
                   }
