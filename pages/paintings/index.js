@@ -1,9 +1,10 @@
 import classes from './index.module.css'
 import PaintingWithModal from '@/components/paintings/paintingWithModal';
-import { useContext, useState } from 'react';
+import { Fragment, useContext, useState } from 'react';
 import LanguageContext from '@/store/language';
 import { getAllPaintings } from '@/lib/paintings-util';
 import { FaBackward, FaForward } from 'react-icons/fa'
+import Head from 'next/head';
 
 export default function Paintings(props) {
   const paintings = props.paintings;
@@ -33,6 +34,25 @@ export default function Paintings(props) {
   }
     
     return (
+      <Fragment>
+         { activeLang &&  
+          <Head>
+            <title>Моите картини за продажба</title>
+            <meta
+              name="description"
+              content="Абстрактни и красиви картини за стена, хол, спалня за продажба. Купи картина за дом, офис, хотел."  
+            >
+            </meta>
+          </Head>}
+          {! activeLang &&  
+          <Head>
+            <title>My Paintings for Sell</title>
+            <meta
+              name="description"
+              content="Abstract and beautiful paintings for wall, bedroom, living room. Buy painting for your home, office, hotel."  
+            >
+            </meta>
+          </Head>}
         <section className={classes.background}>
             <section className={classes.overlay}>
               <section className="container">
@@ -88,6 +108,7 @@ export default function Paintings(props) {
               </section>
             </section>
         </section>
+      </Fragment>
     )
 }
 
