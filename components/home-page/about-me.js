@@ -20,9 +20,16 @@ const AboutMe = ({ bulgarian }) => {
         <section className={classes.info}>
           <article className={classes.display}>
             {bulgarian ?
-              <h4 className={classes.bgTitleAnother}>Изкуството няма нищо общо с яснота. Нито се набърква в ясното, нито изяснява</h4>
+              <div>
+                <h4 className={classes.bgTitleAnother}>&quot;Изкуството няма нищо общо с яснота. Нито се набърква в ясното, нито изяснява&quot;</h4>
+                <h5 className={`${classes.cite} bgFont`}>Самюъл Бекет</h5>
+              </div>
+              
             :
-              <h4 className="henni">Art has nothing to do with clarity, does not dabble in the clear and does not clear</h4>
+              <div>
+                <h4 className="henni">Art has nothing to do with clarity, does not dabble in the clear and does not clear</h4>
+                <h5 className={`${classes.cite} typewriter`}>Samuel Beckett</h5>
+              </div>
             }
            
           </article>
@@ -40,13 +47,20 @@ const AboutMe = ({ bulgarian }) => {
             }
            
             { bulgarian ? 
-              <h4 className={`${classes.display_m} ${classes.bgTitleAnother}`}>
-                Изкуството няма нищо общо с яснота. Нито се набърква в ясното, нито изяснява
-              </h4>
+              <div className={classes.display_m}>
+                <h4 className={`${classes.bgTitleAnother}`}>
+                &quot;Изкуството няма нищо общо с яснота. Нито се набърква в ясното, нито изяснява&quot;
+                </h4>
+                <h5 className={`${classes.cite} bgFont`}>Самюъл Бекет</h5>
+              </div>
+              
             :
-              <h4 className={`${classes.display_m} henni`}>
-                Art has nothing to do with clarity, does not dabble in the clear and does not clear
-              </h4>
+              <div className={classes.display_m}>
+                <h4 className={`henni`}>
+                &quot;Art has nothing to do with clarity, does not dabble in the clear and does not clear&quot;
+                </h4>
+                <h5 className={`${classes.cite} typewriter`}>Samuel Beckett</h5>
+              </div>
             }
 
             { bulgarian ? 

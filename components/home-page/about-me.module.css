@@ -47,13 +47,26 @@
   letter-spacing: .4rem;
 }
 
+.cite {
+  margin-top: 1rem;
+  border-top: 1px solid white;
+  color: white;
+  padding-top: 1rem;
+}
 
 @media screen and (max-width: 1100px) {
 
 }
 
 @media screen and (max-width: 960px) {
-
+  .cite {
+    margin-bottom: 3rem;
+    border-top: none;
+    margin-top: 0;
+    border-bottom: 1px solid white;
+    color: white;
+    padding-bottom: 1rem;
+  }
 }
 
 @media screen and (max-width: 500px) {

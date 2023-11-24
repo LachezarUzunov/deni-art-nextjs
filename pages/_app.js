@@ -8,7 +8,8 @@ export default function App({ Component, pageProps }) {
     <LanguageContextProvider>
       <Layout>
         <Head>
-          <meta name="viewport" content="width=device-width, initial-scale=1"/>
+          <meta name="viewport" content="width=device-width, initial-scale=1"
+          title="Paintings for sell"/>
         </Head>
         <Component {...pageProps} />
       </Layout>
