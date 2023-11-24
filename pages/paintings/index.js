@@ -35,7 +35,7 @@ export default function Paintings(props) {
     
     return (
       <Fragment>
-         { activeLang &&  
+         { bulgarian &&  
           <Head>
             <title>Моите картини за продажба</title>
             <meta
@@ -44,7 +44,7 @@ export default function Paintings(props) {
             >
             </meta>
           </Head>}
-          {! activeLang &&  
+          {! bulgarian &&  
           <Head>
             <title>My Paintings for Sell</title>
             <meta

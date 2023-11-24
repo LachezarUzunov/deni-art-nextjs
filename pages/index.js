@@ -11,7 +11,7 @@ import { Fragment, useContext } from "react";
 export default function Home() {
   const languageCtx = useContext(LanguageContext);
   const activeLang = languageCtx.version;
- 
+  console.log(activeLang);
   return (
     <Fragment>
       { activeLang &&  <Head>
