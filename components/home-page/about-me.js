@@ -27,7 +27,7 @@ const AboutMe = ({ bulgarian }) => {
               
             :
               <div>
-                <h4 className="henni">Art has nothing to do with clarity, does not dabble in the clear and does not clear</h4>
+                <h4 className="henni">&quot;Art has nothing to do with clarity, does not dabble in the clear and does not clear&quot;</h4>
                 <h5 className={`${classes.cite} typewriter`}>Samuel Beckett</h5>
               </div>
             }
