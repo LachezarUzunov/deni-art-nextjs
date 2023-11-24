@@ -9,7 +9,7 @@ import Head from 'next/head';
 export default function Paintings(props) {
   const paintings = props.paintings;
   const languageCtx = useContext(LanguageContext);
-  const bulgarian = languageCtx.version;
+  const activeLang = languageCtx.version;
 
   const [currentPage, setCurrentPage] = useState(1);
   const paintingsPerPage = 5;
@@ -35,7 +35,7 @@ export default function Paintings(props) {
     
     return (
       <Fragment>
-         { bulgarian &&  
+         { activeLang &&  
           <Head>
             <title>Моите картини за продажба</title>
             <meta
@@ -44,7 +44,7 @@ export default function Paintings(props) {
             >
             </meta>
           </Head>}
-          {! bulgarian &&  
+          {! activeLang &&  
           <Head>
             <title>My Paintings for Sell</title>
             <meta
@@ -87,7 +87,7 @@ export default function Paintings(props) {
                               text={p.text}
                               enText={p.enText}
                               sold={p.sold}
-                              bulgarian={bulgarian}
+                              bulgarian={activeLang}
                               wide={p.wide}
                           />
                     );

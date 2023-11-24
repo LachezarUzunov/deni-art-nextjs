@@ -652,7 +652,7 @@ const PAINTINGS = [
 export default function Drawings() {
     const languageCtx = useContext(LanguageContext);
 
-    const bulgarian = languageCtx.version;
+    const activeLang = languageCtx.version;
 
     const [currentPage, setCurrentPage] = useState(1);
     const paintingsPerPage = 10;
@@ -717,7 +717,7 @@ export default function Drawings() {
                             height={400}
                             dimensions={p.dimensions}
                             sold={p.sold}
-                            bulgarian={bulgarian}
+                            bulgarian={activeLang}
                             wide={p.wide}
                         />
                   );
