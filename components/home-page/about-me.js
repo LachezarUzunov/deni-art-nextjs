@@ -35,9 +35,9 @@ const AboutMe = ({ bulgarian }) => {
           </article>
           <article>
             { bulgarian ? 
-              <p className="bgFont shadow">Родена съм през ноември 1989г., един мил скорпион. 😉</p>
+              <p className="bgFont shadow">Родена съм през ноември 1989г., един мил Скорпион. 😉</p>
             :
-              <p className="typewriter shadow">I was born November, 1989., a kind scorpio. 😉</p>
+              <p className="typewriter shadow">I was born November, 1989., a kind Scorpio. 😉</p>
             }
 
             { bulgarian ? 

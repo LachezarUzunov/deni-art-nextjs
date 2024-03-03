@@ -73,7 +73,7 @@ const OnFocus = ({ bulgarian }) => {
             </p>
           :
             <p className="typewriter">
-              The stars pour out from countless glittering cranial cavities. The sky with its skulls instead of stars swells ominously. Their voices inhabit mine. Into the eyehole of the giant skull I sink. I fall into your dream. I see the disparity of love as an extreme, naked pulse. I enter your past, present and future bodies – (into) the infinity of the prison. My tear unlocks the secret of Death: /n/n I am beyond God only as human. /n You are beyond God only as me.
+              The stars pour out from countless glittering cranial cavities. The sky with its skulls instead of stars swells ominously. Their voices inhabit mine. Into the eyehole of the giant skull I sink. I fall into your dream. I see the disparity of love as an extreme, naked pulse. I enter your past, present and future bodies – (into) the infinity of the prison. My tear unlocks the secret of Death: I am beyond God only as human. You are beyond God only as me.
             </p>
           }
           
