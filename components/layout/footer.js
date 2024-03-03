@@ -63,14 +63,14 @@ const Footer = () => {
           </ul>
           <ul className={classes.nav__links}>
             <li>
-              <a className={classes.lis}>
+              <Link className={classes.lis} href="https://www.facebook.com/people/DeniGreg-Art/61553292177686/">
                 <BsFacebook />
-              </a>
+              </Link>
             </li>
             <li>
-              <a className={classes.lis}>
+              <Link className={classes.lis} href="https://www.instagram.com/denigregart/">
                 <BsInstagram />
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

@@ -104,12 +104,12 @@ const MainNavigation = ({ bulgarianVersion }) => {
             </Link>
           </li>
           <li>
-          <Link className={classes.link} href="https://www.facebook.com">
+          <Link className={classes.link} href="https://www.facebook.com/people/DeniGreg-Art/61553292177686/">
             <BsFacebook />
           </Link>
         </li>
         <li>
-          <Link className={classes.link} href="/">
+          <Link className={classes.link} href="https://www.instagram.com/denigregart/">
             <BsInstagram />
           </Link>
         </li>
@@ -195,12 +195,12 @@ const MainNavigation = ({ bulgarianVersion }) => {
             </Link>
           </li>
           <li>
-          <Link className={classes.link} href="https://www.facebook.com">
+          <Link className={classes.link} href="https://www.facebook.com/people/DeniGreg-Art/61553292177686/">
             <BsFacebook />
           </Link>
         </li>
         <li>
-          <Link className={classes.link} href="/">
+          <Link className={classes.link} href="https://www.instagram.com/denigregart/">
             <BsInstagram />
           </Link>
         </li>
