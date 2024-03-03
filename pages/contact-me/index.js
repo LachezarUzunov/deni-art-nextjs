@@ -39,7 +39,7 @@ const Contacts = () => {
           {bulgarian ?
             <h3 className={`${classes.contact_details} bgFont`}>denigreg_art@abv.bg</h3>
           :
-            <h3 className={`${classes.contact_details} typewriter`}>denigreg@abv.bg</h3>
+            <h3 className={`${classes.contact_details} typewriter`}>denigreg_art@abv.bg</h3>
           }
         </div>
       </article>
