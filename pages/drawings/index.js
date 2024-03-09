@@ -391,7 +391,9 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: false,
       sold: false,
-      wide: true
+      wide: true,
+      note: "асиметрична форма",
+      enNote: "asymmetrical shape"
     }, 
     {
       key: "33",
@@ -453,7 +455,9 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: false,
       sold: false,
-      wide: true
+      wide: true,
+      note: "Това са две картини, размерите на всяка 15 x 20, двете заедно 30 x 40.",
+      enNote: "These are two paintings, dimensions of each one 15 x 20, together 30 x 40."
     },
     {
       key: "38",
@@ -719,6 +723,8 @@ export default function Drawings() {
                             sold={p.sold}
                             bulgarian={activeLang}
                             wide={p.wide}
+                            note={note}
+                            enNote={enNote}
                         />
                   );
                 })}

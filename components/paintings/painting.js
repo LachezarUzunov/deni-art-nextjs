@@ -23,7 +23,9 @@ export default function Painting({
     enText, 
     bulgarian, 
     sold,
-    wide
+    wide,
+    note,
+    enNote
 }) {
     const [showImgOverlay, setShowImgOverlay] = useState(false);
     const [showImgOverlayMobile, setShowImgOverlayMobile] = useState(false);
@@ -103,6 +105,14 @@ export default function Painting({
                     </div>
                 : 
                     null
+                }
+                { note && bulgarian ?
+                    <p className='bgFont'>{note}</p>
+                    : ''
+                }
+                { note && ! bulgarian ?
+                    <p className='typewriter'>{enNote}</p>
+                    : ''
                 }
                 {! sold && <div className={classes.centered}>
                     { bulgarian ?

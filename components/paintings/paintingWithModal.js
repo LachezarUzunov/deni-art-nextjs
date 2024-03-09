@@ -18,7 +18,9 @@ const PaintingWithModal = ({
   enText, 
   bulgarian, 
   sold,
-  wide
+  wide,
+  note,
+  enNote
 }) => {
   const [showImgOverlay, setShowImgOverlay] = useState(false);
 
@@ -45,6 +47,8 @@ return (
         bulgarian={bulgarian}
         sold={sold}
         wide={wide}
+        note={note}
+        enNote={enNote}
         onClick={() => setShowImgOverlay(true)} />
       {showImgOverlay && (
         <PaintingOverlayModal 
