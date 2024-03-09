@@ -825,8 +825,8 @@ export default function Drawings() {
                             sold={p.sold}
                             bulgarian={activeLang}
                             wide={p.wide}
-                            note={note}
-                            enNote={enNote}
+                            note={p.note}
+                            enNote={p.enNote}
                         />
                   );
                 })}

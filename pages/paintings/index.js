@@ -89,6 +89,8 @@ export default function Paintings(props) {
                               sold={p.sold}
                               bulgarian={activeLang}
                               wide={p.wide}
+                              note={p.note}
+                              enNote={p.enNote}
                           />
                     );
                   })}
