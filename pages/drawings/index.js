@@ -18,6 +18,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: false,
       sold: false,
+      note: false,
+      enNote: false
     },
     {
       key: "2",
@@ -30,6 +32,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: false,
       sold: false,
+      note: false,
+      enNote: false
     },
     {
       key: "3",
@@ -42,6 +46,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: false,
       sold: false,
+      note: false,
+      enNote: false
     },
     {
       key: "4",
@@ -54,6 +60,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: false,
       sold: false,
+      note: false,
+      enNote: false
     }, 
     {
       key: "5",
@@ -66,6 +74,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: true,
       sold: true,
+      note: false,
+      enNote: false
     }, 
     {
       key: "6",
@@ -78,6 +88,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: false,
       sold: false,
+      note: false,
+      enNote: false
     },  
     {
       key: "7",
@@ -90,6 +102,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: false,
       sold: false,
+      note: false,
+      enNote: false
     }, 
     {
       key: "8",
@@ -102,6 +116,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: false,
       sold: false,
+      note: false,
+      enNote: false
     },
     {
       key: "9",
@@ -114,6 +130,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: false,
       sold: false,
+      note: false,
+      enNote: false
     },
     {
       key: "10",
@@ -126,6 +144,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: false,
       sold: false,
+      note: false,
+      enNote: false
     },
     {
       key: "11",
@@ -138,6 +158,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: false,
       sold: false,
+      note: false,
+      enNote: false
     }, 
     {
       key: "12",
@@ -150,6 +172,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: false,
       sold: false,
+      note: false,
+      enNote: false
     }, 
     {
       key: "13",
@@ -162,6 +186,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: false,
       sold: false,
+      note: false,
+      enNote: false
     },
     {
       key: "14",
@@ -174,6 +200,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: false,
       sold: false,
+      note: false,
+      enNote: false
     },
     {
       key: "15",
@@ -186,6 +214,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: false,
       sold: false,
+      note: false,
+      enNote: false
     }, 
     {
       key: "16",
@@ -198,6 +228,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: false,
       sold: false,
+      note: false,
+      enNote: false
     }, 
     {
       key: "17",
@@ -210,6 +242,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: false,
       sold: false,
+      note: false,
+      enNote: false
     },
     {
       key: "18",
@@ -222,6 +256,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: false,
       sold: false,
+      note: false,
+      enNote: false
     },
     {
       key: "19",
@@ -234,6 +270,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: false,
       sold: false,
+      note: false,
+      enNote: false
     },
     {
       key: "20",
@@ -246,7 +284,9 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: false,
       sold: false,
-      wide: true
+      wide: true,
+      note: false,
+      enNote: false
     },
     {
       key: "21",
@@ -259,6 +299,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: false,
       sold: false,
+      note: false,
+      enNote: false
     },
     {
       key: "22",
@@ -271,6 +313,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: false,
       sold: false,
+      note: false,
+      enNote: false
     },
     {
       key: "23",
@@ -283,6 +327,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: false,
       sold: false,
+      note: false,
+      enNote: false
     },
     {
       key: "24",
@@ -295,6 +341,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: false,
       sold: false,
+      note: false,
+      enNote: false
     },
     {
       key: "25",
@@ -307,6 +355,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: false,
       sold: false,
+      note: false,
+      enNote: false
     },
     {
       key: "26",
@@ -319,6 +369,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: true,
       sold: true,
+      note: false,
+      enNote: false
     },
     {
       key: "27",
@@ -331,6 +383,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: false,
       sold: false,
+      note: false,
+      enNote: false
     },
     {
       key: "28",
@@ -343,6 +397,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: false,
       sold: false,
+      note: false,
+      enNote: false
     },
     {
       key: "29",
@@ -355,6 +411,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: false,
       sold: false,
+      note: false,
+      enNote: false
     },
     {
       key: "30",
@@ -367,6 +425,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: false,
       sold: false,
+      note: false,
+      enNote: false
     },  
     {
       key: "31",
@@ -379,6 +439,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: false,
       sold: false,
+      note: false,
+      enNote: false
     },
     {
       key: "32",
@@ -406,6 +468,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: false,
       sold: false,
+      note: false,
+      enNote: false
     },
     {
       key: "34",
@@ -418,6 +482,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: true,
       sold: true,
+      note: false,
+      enNote: false
     },  
     {
       key: "35",
@@ -430,7 +496,9 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: false,
       sold: false,
-      wide: true
+      wide: true,
+      note: false,
+      enNote: false
     },
     {
       key: "36",
@@ -443,6 +511,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: false,
       sold: false,
+      note: false,
+      enNote: false
     }, 
     {
       key: "37",
@@ -470,6 +540,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: false,
       sold: false,
+      note: false,
+      enNote: false
     },  
     {
       key: "39",
@@ -482,6 +554,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: false,
       sold: false,
+      note: false,
+      enNote: false
     }, 
     {
       key: "40",
@@ -494,6 +568,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: false,
       sold: false,
+      note: false,
+      enNote: false
     }, 
     {
       key: "41",
@@ -506,6 +582,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: false,
       sold: false,
+      note: false,
+      enNote: false
     },
     {
       key: "42",
@@ -518,6 +596,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: false,
       sold: false,
+      note: false,
+      enNote: false
     }, 
     {
       key: "43",
@@ -530,6 +610,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: false,
       sold: false,
+      note: false,
+      enNote: false
     }, 
     {
       key: "44",
@@ -542,6 +624,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: false,
       sold: false,
+      note: false,
+      enNote: false
     },  
     {
       key: "45",
@@ -554,6 +638,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: false,
       sold: false,
+      note: false,
+      enNote: false
     }, 
     {
       key: "46",
@@ -566,6 +652,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: false,
       sold: false,
+      note: false,
+      enNote: false
     },
     {
       key: "47",
@@ -578,6 +666,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: false,
       sold: false,
+      note: false,
+      enNote: false
     },
     {
       key: "48",
@@ -590,6 +680,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: true,
       sold: true,
+      note: false,
+      enNote: false
     },   
     {
       key: "49",
@@ -602,6 +694,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: false,
       sold: false,
+      note: false,
+      enNote: false
     },
     {
       key: "50",
@@ -614,6 +708,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: false,
       sold: false,
+      note: false,
+      enNote: false
     },  
     {
       key: "51",
@@ -626,6 +722,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: true,
       sold: true,
+      note: false,
+      enNote: false
     },  
     {
       key: "52",
@@ -638,6 +736,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: false,
       sold: false,
+      note: false,
+      enNote: false
     }, 
     {
       key: "53",
@@ -650,6 +750,8 @@ const PAINTINGS = [
       enTechnique: "mixed media",
       продадена: false,
       sold: false,
+      note: false,
+      enNote: false
     },                                                                                                                                                                                                              
   ];
 
